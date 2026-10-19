@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "status": "planned_not_started",
+  "created_date_local": "2026-10-17",
+  "timezone": "Asia/Shanghai",
+  "execution_authorized_by_this_file": false,
+  "code_implemented": false,
+  "queries_generated": false,
+  "science_frozen_for_execution": false,
+  "human_plan": "experiments/geometry_conditioned_path_detection_20261017/FINAL_REPORT_CN.md",
+  "human_plan_section": "下一轮：论文正式全量仿真计划",
+  "output_root": "experiments/paper_formal_240_20261017",
+  "source_experiment": "experiments/geometry_conditioned_path_detection_20261017",
+  "primary_questions": [
+    "new complete geometric mapping versus designated direct set decoder on identical noisy measurements",
+    "cooperative coverage versus independent coverage with the identical M3 learner"
+  ],
+  "world": {
+    "layout": "H0",
+    "physics": "W1a",
+    "new_layouts": false,
+    "material_map": "existing fixed H0 W1a glass/concrete mesh; pin effective asset hashes before execution",
+    "mechanisms": [
+      "los",
+      "single_facade_specular_reflection",
+      "double_facade_specular_reflection"
+    ],
+    "ground_diffraction_diffuse": false,
+    "signal_max_paths": 6,
+    "signal_gain_floor_db": -140,
+    "tau_max_s": 1.8e-06,
+    "physical_fov": "full_sphere_at_both_arrays",
+    "rx_antenna_center_height_m": 1.5,
+    "array": "horizontal_uca_8_tx_8_rx",
+    "carrier_hz": 3500000000,
+    "frequency_count": 128,
+    "frequency_spacing_hz": 500000,
+    "noise": "existing fixed variance; reference_frobenius_snr_db=30 at reference_gain_db=-90",
+    "target_max_paths": 3,
+    "target_gain_floor_db": -110,
+    "frontend": "existing frozen pure-noise-calibrated MUSIC plus joint LS; do not recalibrate",
+    "reference": "noiseless CSI through identical frozen frontend",
+    "angle_convention": "canonical horizontal-UCA mirror representative; no physical hemisphere rejection",
+    "private_material_and_rt_paths": "simulation/evaluation only; never learner/planner inputs"
+  },
+  "branches": {
+    "I-D": {
+      "learner": "D-replay",
+      "architecture": "ckm_sim.model.SetCKM direct 3-slot decoder, hidden widths 128/128/128",
+      "features": "G0; includes public LoS/single-reflection descriptors; not a geometry-free baseline",
+      "collector": "I",
+      "sampling": "same K-preserving spatial replay as M3; new retraining, not historical uniform I-D",
+      "do_not_substitute": "M0/Lf_replay is geometric hybrid and is not I-D"
+    },
+    "I-G": {
+      "learner": "M3",
+      "features": "G2",
+      "collector": "I"
+    },
+    "C-G": {
+      "learner": "M3",
+      "features": "G2",
+      "collector": "C",
+      "score": "historical coverage only"
+    },
+    "P-G": {
+      "learner": "M3",
+      "features": "G2",
+      "collector": "P",
+      "score": "0.9 normalized committee disagreement plus 0.1 historical coverage"
+    }
+  },
+  "seeds": {
+    "formal_pairs": [
+      5101,
+      5102,
+      5103,
+      5104,
+      5105,
+      5106,
+      5107,
+      5108,
+      5109,
+      5110
+    ],
+    "engineering_pair": 5099,
+    "formal_query": 2026101811,
+    "engineering_query": 2026101812,
+    "old_exploratory_pairs_excluded_from_formal_statistics": [
+      3001,
+      3002,
+      3003
+    ],
+    "replacement_seeds_allowed": false
+  },
+  "queries": {
+    "formal_count": 4096,
+    "engineering_count": 256,
+    "distribution": "natural safe airspace volume times road arc length, equal weight",
+    "selection_filter": "geometry safety and exact-coordinate deduplication with historical selection queries only; no reference K/power/performance filters",
+    "freeze_before_reference_generation": true,
+    "strict_spatial_holdout_claim": false,
+    "learner_planner_query_access": false,
+    "evaluator": "separate offline process reading checkpoints, no performance feedback to policy"
+  },
+  "schedule": {
+    "window_s": 1800,
+    "initial_windows": 1,
+    "subsequent_windows": 7,
+    "total_windows": 8,
+    "probe_hz": 1,
+    "attempts_per_branch": 14400,
+    "net_sensing_s": 14400,
+    "service_after_every_window_including_final": true,
+    "service_s_per_window_expected": 427.96875,
+    "service_s_total_expected": 3423.75,
+    "physical_time_s_excluding_computation_expected": 17823.75,
+    "service_values_must_be_checked_against_runtime": true,
+    "reported_minutes": [
+      30,
+      60,
+      90,
+      120,
+      150,
+      180,
+      210,
+      240
+    ],
+    "online_per_frame_updates": false
+  },
+  "learning": {
+    "committee_members": 3,
+    "batch": 64,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 5,
+    "lr_schedule": "constant",
+    "initial_steps_per_member": 1500,
+    "subsequent_steps_per_member": 800,
+    "final_steps_per_member": 7100,
+    "sampling": "half uniform frames, half within-K equal spatial cells; empirical K marginal preserved",
+    "I_D_I_G_exact_minibatch_index_hash_match": true,
+    "warm_start": "all valid noisy history in the current formal seed only",
+    "exploratory_weight_reuse": false,
+    "valid_empty_labels_in_training": true,
+    "invalid_measurements": "keep attempts and quality; no fabricated labels",
+    "threshold": 0.5,
+    "threshold_retuning": false,
+    "prediction": "squared-GOSPA medoid",
+    "M3": {
+      "candidate_capacity": 64,
+      "candidate_geometry": "public ordered finite-facade LoS/single/double reflections",
+      "free_slots_max": 1,
+      "output_paths_max": 3,
+      "nms_delay_s": 5e-09,
+      "nms_direction_deg_each_end": 5,
+      "architecture_and_loss": "exact existing selected candidate_level.py with no model search"
+    }
+  },
+  "planning": {
+    "candidates": 1024,
+    "beam": 6,
+    "disagreement_epsilon": 0.1,
+    "coverage_only_epsilon": 1,
+    "motion_and_safety": "existing H0 primitives, road and speed limits, full-trajectory probe utility and recoverability",
+    "candidate_rng": "same per-pair/per-window stream; actual coordinates may differ after vehicle states differ",
+    "safe_fallbacks_must_be_logged": true
+  },
+  "pairing_and_reuse": {
+    "public_initial_measurements_per_seed": 1800,
+    "I_D_and_I_G": "same I collector records, validity, timestamps and minibatches",
+    "M3_initial_fork": "deep copy weights, optimizer, samplers, torch/CUDA RNG and vehicle state for I-G/C-G/P-G",
+    "architecture_initial_weights_identical_required": false,
+    "model_result_count": 40,
+    "collector_trajectory_count": 30,
+    "unique_rf_attempts_total": 396000,
+    "costs": "shared actual costs counted once; also report complete standalone method costs"
+  },
+  "statistics": {
+    "replicate_unit": "paired seed, n=10; not query, frame or committee member",
+    "global_metric": "sqrt(equal-weight mean of per-query squared GOSPA), then summarize across seeds",
+    "primary_endpoint": "global GOSPA at net sensing 240 min",
+    "primary_comparisons": [
+      "I-G versus I-D",
+      "C-G versus I-G"
+    ],
+    "secondary_comparisons": [
+      "P-G versus C-G",
+      "P-G versus I-G"
+    ],
+    "relative_improvement_percent": "100 * (1 - E_method / E_control), computed per seed before averaging",
+    "confidence_interval": "paired Student t on 10 seed differences/improvements; df=9; 95% intervals labelled unadjusted",
+    "significance_claims": "two-sided paired t with Holm correction across the two primary comparisons, family alpha=0.05, positive effect required",
+    "secondary_auc": "trapezoidal integral of squared global GOSPA over 30..240 min divided by 210 min; no extrapolation to zero",
+    "subsets": [
+      "empty",
+      "nonempty",
+      "K1",
+      "K_ge_2",
+      "second_reflection_related_observable_components"
+    ],
+    "diagnostics": [
+      "matched_parameter_cost",
+      "miss_cost",
+      "false_cost",
+      "matched_recall",
+      "false_paths_per_query",
+      "K_confusion_0_to_3",
+      "matched_parameter_rmse_and_counts"
+    ],
+    "zero_denominator": "NA plus absolute quantities; never silently omit",
+    "no_cross_layout_inference": true,
+    "no_power_or_significance_guarantee": true
+  },
+  "execution_order": [
+    "environment and effective scientific configuration checks",
+    "isolated runner adaptation and relevant contract tests",
+    "seed5099 two-full-window engineering smoke plus eight-window budget dry check",
+    "source/assets/effective-config/query freeze before any formal outcome",
+    "all ten paired formal seeds, no outcome-dependent alteration",
+    "offline evaluation, integrity audit, figures and update sole human ledger"
+  ],
+  "engineering_smoke": {
+    "windows": 2,
+    "window_s": 1800,
+    "branches": [
+      "I-D",
+      "I-G",
+      "C-G",
+      "P-G"
+    ],
+    "steps_per_member": [
+      1500,
+      800
+    ],
+    "selection_by_performance": false,
+    "included_in_formal_results": false
+  },
+  "resource_plan": {
+    "python": ".venv/bin/python",
+    "initial_pair_workers": {
+      "CMP_170HX": 2,
+      "RTX_2080_Ti": 1
+    },
+    "receiver_batch_start": 8,
+    "precision": "existing validated complex precisions, network FP32, metric FP64",
+    "allowed_runtime_changes": [
+      "worker count",
+      "batch chunking",
+      "prefetch",
+      "exact geometry caching"
+    ],
+    "llama_server_service": "must remain stopped; never restart",
+    "eta": "hours scale only; replace with measured per-window estimate after implementation and engineering smoke, no hard deadline"
+  },
+  "storage": {
+    "human_report": "update existing single FINAL_REPORT_CN.md; do not create scattered report markdown files",
+    "records": "one HDF5 keyed by seed and I/C/P streams; shared initial and I records stored once",
+    "retain_all_attempt_metadata_noisy_labels_quality_and_training_state": true,
+    "raw_S_retention": "first 8 frames per stream, global_probe_index modulo 100 equals 0, and all invalid/anomalous frames",
+    "drop_other_S_only_after_regeneration_check": true,
+    "predictions": "decoded predictions and per-query error decomposition at all eight updates; full candidate raw/logits only at terminal and prespecified diagnostics",
+    "preserve_unique_evidence": true
+  },
+  "completion_and_failure_rules": {
+    "formal_models": 40,
+    "evaluations_per_model": 8,
+    "all_prespecified_seeds_required": true,
+    "outcome_based_early_stop": false,
+    "seed_extension_to_obtain_positive_result": false,
+    "hardware_failures": "log original failure, deterministic same-seed resume from committed checkpoint; adjust runtime concurrency only",
+    "scientific_or_isolation_defects": "stop affected work, record repair, refreeze and consistently recompute all affected comparisons; no algorithm-version mixing",
+    "unrecoverable_seed": "mark incomplete, report reason, do not replace",
+    "paper_response_to_negative_results": "narrow contribution claims; do not append new experiments"
+  },
+  "not_scheduled": [
+    "H1/H2",
+    "new cities",
+    "map errors",
+    "SNR sweep",
+    "K4",
+    "CFAR",
+    "material inversion",
+    "480min",
+    "feedback interval sweep"
+  ],
+  "paper_and_overleaf_edits": false,
+  "must_exist_before_execution": [
+    "implemented and checked isolated runner",
+    "effective_config.json",
+    "environment report",
+    "relevant contract test and smoke results",
+    "query hash before reference generation",
+    "source and asset hashes",
+    "freeze.json"
+  ],
+  "ledger_revision": {
+    "reason": "append paper formal simulation plan only; original completed results and historical archive preserved byte-for-byte after removing additions",
+    "before_sha256": "85d33be8eb5bf88432c7063ed20654dedab0bb64f25ad87de9db1ee9f1260711",
+    "after_sha256": "213b061a5ab54807a16935f03be11c46e8b20a2af1a19aed21a81613c61b39cb"
+  }
+}

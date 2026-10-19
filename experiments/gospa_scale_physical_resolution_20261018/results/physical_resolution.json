@@ -1,0 +1,123 @@
+{
+  "carrier_hz": 3500000000.0,
+  "speed_of_light_mps": 299792458.0,
+  "wavelength_m": 0.085654988,
+  "n_elements": 8,
+  "radius_m": 0.05595681753886523,
+  "radius_over_wavelength": 0.6532814824381883,
+  "reference_azimuth_deg": 0,
+  "reference_zenith_deg": 90,
+  "half_power_level": 0.5,
+  "azimuth_half_power_half_width_deg": 15.772246573947548,
+  "azimuth_HPBW_full_width_deg": 31.544493147895096,
+  "tx_half_width_deg": 15.772246573947548,
+  "zenith_toward_pole_half_width_deg": 43.48200130779116,
+  "nominal_bandwidth_hz": 64000000.0,
+  "endpoint_tone_span_hz": 63500000.0,
+  "nominal_delay_scale_ns": 15.625,
+  "Q": 64,
+  "Q_nominal_aperture_hz": 32000000.0,
+  "Q_endpoint_tone_span_hz": 31500000.0,
+  "Q_delay_scale_ns": 31.25,
+  "direction_dependence": [
+    {
+      "reference_zenith_deg": 0,
+      "azimuth_half_width_deg": null,
+      "azimuth_full_width_deg": null,
+      "azimuth_search_positive_deg": [
+        0,
+        180
+      ],
+      "toward_zenith_half_width_deg": null,
+      "toward_nadir_half_width_deg": 15.926822999929513
+    },
+    {
+      "reference_zenith_deg": 5,
+      "azimuth_half_width_deg": null,
+      "azimuth_full_width_deg": null,
+      "azimuth_search_positive_deg": [
+        0,
+        180
+      ],
+      "toward_zenith_half_width_deg": null,
+      "toward_nadir_half_width_deg": 16.196349641317376
+    },
+    {
+      "reference_zenith_deg": 10,
+      "azimuth_half_width_deg": 104.39534729971224,
+      "azimuth_full_width_deg": 208.79069459942448,
+      "azimuth_search_positive_deg": [
+        0,
+        180
+      ],
+      "toward_zenith_half_width_deg": null,
+      "toward_nadir_half_width_deg": 16.61913004946328
+    },
+    {
+      "reference_zenith_deg": 30,
+      "azimuth_half_width_deg": 31.853598732596414,
+      "azimuth_full_width_deg": 63.70719746519283,
+      "azimuth_search_positive_deg": [
+        0,
+        180
+      ],
+      "toward_zenith_half_width_deg": 16.96239163098108,
+      "toward_nadir_half_width_deg": 20.75151987988642
+    },
+    {
+      "reference_zenith_deg": 45,
+      "azimuth_half_width_deg": 22.37689919891577,
+      "azimuth_full_width_deg": 44.75379839783154,
+      "azimuth_search_positive_deg": [
+        0,
+        180
+      ],
+      "toward_zenith_half_width_deg": 19.361136825527367,
+      "toward_nadir_half_width_deg": 33.966726410010075
+    },
+    {
+      "reference_zenith_deg": 60,
+      "azimuth_half_width_deg": 18.23158883002226,
+      "azimuth_full_width_deg": 36.46317766004452,
+      "azimuth_search_positive_deg": [
+        0,
+        180
+      ],
+      "toward_zenith_half_width_deg": 23.728233172237374,
+      "toward_nadir_half_width_deg": 83.7282331722374
+    },
+    {
+      "reference_zenith_deg": 75,
+      "azimuth_half_width_deg": 16.33236280858411,
+      "azimuth_full_width_deg": 32.66472561716822,
+      "azimuth_search_positive_deg": [
+        0,
+        180
+      ],
+      "toward_zenith_half_width_deg": 31.24973484402677,
+      "toward_nadir_half_width_deg": 61.24973484402676
+    },
+    {
+      "reference_zenith_deg": 90,
+      "azimuth_half_width_deg": 15.772246573947548,
+      "azimuth_full_width_deg": 31.544493147895096,
+      "azimuth_search_positive_deg": [
+        0,
+        180
+      ],
+      "toward_zenith_half_width_deg": 43.48200130779116,
+      "toward_nadir_half_width_deg": 43.48200130779115
+    }
+  ],
+  "notes": [
+    "HPBW is reference azimuth full mainlobe width at phi=0, theta=90 degrees, not an isotropic 3D resolution.",
+    "A single-path steering-correlation width is not a MUSIC RMSE, CRLB, hard two-path limit, or superresolution guarantee.",
+    "Near zenith azimuth is unidentifiable; no half-power root within the scan is reported as null.",
+    "Horizontal UCA has exact upper/lower mirror ambiguity.",
+    "Gain scale 5 dB is retained engineering normalization, not derivable from aperture alone.",
+    "Nf*delta_f=64 MHz is the nominal definition; the actual endpoint-tone separation is 63.5 MHz.",
+    "Physical scale groups are mixed physical references and engineering gain normalization, not IEEE/3GPP mandated values."
+  ],
+  "wall_s": 0.2559425280196592,
+  "epoch": 1792320826.2552013
+}

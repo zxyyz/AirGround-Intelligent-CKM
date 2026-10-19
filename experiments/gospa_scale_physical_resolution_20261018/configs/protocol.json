@@ -1,0 +1,240 @@
+{
+  "version": 1,
+  "epoch": 1792320692.4213235,
+  "task": "fixed-prediction GOSPA scale sensitivity and physical resolution reference",
+  "seeds": [
+    5101,
+    5102,
+    5103,
+    5104,
+    5105,
+    5106,
+    5107,
+    5108,
+    5109,
+    5110
+  ],
+  "branches": [
+    "I-D",
+    "I-G",
+    "C-G",
+    "P-G"
+  ],
+  "rounds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "queries": 4096,
+  "scales": [
+    {
+      "id": "S0",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Gain_strict",
+      "gain_db": 3,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Gain_loose",
+      "gain_db": 8,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Delay_10",
+      "gain_db": 5,
+      "delay_ns": 10,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Delay_15",
+      "gain_db": 5,
+      "delay_ns": 15,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Delay_40",
+      "gain_db": 5,
+      "delay_ns": 40,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Angle_10",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 10,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Angle_25",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 25,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Joint_strict",
+      "gain_db": 3,
+      "delay_ns": 10,
+      "angle_deg": 10,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Joint_relaxed",
+      "gain_db": 8,
+      "delay_ns": 40,
+      "angle_deg": 25,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "S_phys",
+      "gain_db": 5,
+      "delay_ns": 15.625,
+      "angle_deg": "derived_full_HPBW",
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "S_phys_Q",
+      "gain_db": 5,
+      "delay_ns": 31.25,
+      "angle_deg": "derived_full_HPBW",
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "S_phys_half",
+      "gain_db": 5,
+      "delay_ns": 15.625,
+      "angle_deg": "derived_half_power_half_width",
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Cutoff_2",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 2,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Cutoff_4",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 4,
+      "p": 2,
+      "alpha": 2
+    }
+  ],
+  "main_experiment": "fixed saved final medoid predictions, probability threshold .5; optimal partial assignment recomputed for each scale; no retraining or trajectory changes",
+  "primary_comparisons": [
+    [
+      "I-G",
+      "I-D"
+    ],
+    [
+      "C-G",
+      "I-G"
+    ]
+  ],
+  "secondary_comparisons": [
+    [
+      "P-G",
+      "C-G"
+    ]
+  ],
+  "statistics": {
+    "replicate": "paired seed",
+    "endpoint": "240 min global sqrt(weighted mean squared GOSPA)",
+    "relative_improvement": "100*(1-E_method/E_control)",
+    "CI": "unadjusted paired t interval, df=9",
+    "auc": "30-240 min trapezoidal mean squared GOSPA / 210 min",
+    "multiplicity": "Holm over two primary endpoints within each scale; sensitivity across 15 correlated scales is exploratory, no independent confirmatory claims across scales"
+  },
+  "baseline_tolerance": 1e-08,
+  "tie": "exact enumeration in increasing cardinality and lexicographic index order; update only if cost < best-1e-12",
+  "weighting": "fixed saved weights, equal 1/4096; subsets conditional normalized weights",
+  "physical_definition": {
+    "array": "actual ckm_sim.sounding.array_response; 8-element horizontal UCA",
+    "reference_azimuth_deg": 0,
+    "reference_zenith_deg": 90,
+    "root": "first positive displacement where squared steering correlation=.5; dense brackets then Brent root",
+    "azimuth_scan_positive_deg": [
+      0,
+      180
+    ],
+    "zenith_scan_deg": [
+      0,
+      180
+    ],
+    "azimuth_diagnostic_zeniths_deg": [
+      30,
+      45,
+      60,
+      75,
+      90
+    ],
+    "delay": "1/(Nf*delta_f) and 1/(Q*delta_f); endpoint span (Nf-1)*delta_f reported separately",
+    "gain": "5 dB retained engineering scale; not inferred from aperture"
+  },
+  "D1": {
+    "status": "planned",
+    "scope": "10 seeds x4 branches, 240-min endpoint only; regenerate full 3-member outputs from frozen weights/features; S0 and S_phys medoid selection and cross-scoring; fixed threshold .5 and same NMS",
+    "diagnostic_arrays": "never use truncated first16 arrays"
+  },
+  "D2": {
+    "status": "conditional",
+    "trigger": "ranking reversal, mean primary effect changes >5 percentage points, or major K>=2/second-related assignment changes requiring optimization diagnosis",
+    "maximum": "3 fixed historical pairs; at most S0/S_phys/most-changing scale; no new RF",
+    "decision_rule": "consider only after C; robust main conclusions may stop without D2; report trigger and rationale explicitly"
+  },
+  "protection": "all old experiments/ckm_sim/paper/root handoff/Overleaf read-only; llama-server remains stopped",
+  "plots": {
+    "colors": "MATLAB default cycle",
+    "font": "genuine Microsoft Times New Roman regular/bold/italic/bolditalic, embedded TrueType, verified with pdffonts",
+    "no_font_distribution": true
+  },
+  "formal_outcomes_new_scales_inspected": false
+}

@@ -1,0 +1,142 @@
+{
+  "scales": [
+    {
+      "id": "S0",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Gain_strict",
+      "gain_db": 3,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Gain_loose",
+      "gain_db": 8,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Delay_10",
+      "gain_db": 5,
+      "delay_ns": 10,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Delay_15",
+      "gain_db": 5,
+      "delay_ns": 15,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Delay_40",
+      "gain_db": 5,
+      "delay_ns": 40,
+      "angle_deg": 15,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Angle_10",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 10,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Angle_25",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 25,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Joint_strict",
+      "gain_db": 3,
+      "delay_ns": 10,
+      "angle_deg": 10,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Joint_relaxed",
+      "gain_db": 8,
+      "delay_ns": 40,
+      "angle_deg": 25,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "S_phys",
+      "gain_db": 5,
+      "delay_ns": 15.625,
+      "angle_deg": 31.544493147895096,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "S_phys_Q",
+      "gain_db": 5,
+      "delay_ns": 31.25,
+      "angle_deg": 31.544493147895096,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "S_phys_half",
+      "gain_db": 5,
+      "delay_ns": 15.625,
+      "angle_deg": 15.772246573947548,
+      "cutoff": 3,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Cutoff_2",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 2,
+      "p": 2,
+      "alpha": 2
+    },
+    {
+      "id": "Cutoff_4",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 4,
+      "p": 2,
+      "alpha": 2
+    }
+  ],
+  "physical_resolution_sha256": "eeaa4f052ef8fc7ca4272097484f43c542f3347ffe5347133ae5519c0ccf9fd7",
+  "protocol_sha256": "ba055b1b7462d15ded6d69a5f526a0fd94a8dd3761ea6cce6b3755f6f5defd6d",
+  "resolution": "deterministic physical definitions frozen before any new-scale scoring"
+}

@@ -1,0 +1,281 @@
+{
+  "config_version": 2,
+  "status": "formal_v1_4",
+  "paper_version": "v1.4",
+  "equation_labels_file": "../docs/equation_map.csv",
+  "scene": {
+    "geometry_seed": 101,
+    "material_seed": 4101,
+    "size_xy_m": [
+      240.0,
+      240.0
+    ],
+    "building_centers_axis_m": [
+      30.0,
+      90.0,
+      150.0,
+      210.0
+    ],
+    "building_footprint_xy_m": [
+      40.0,
+      40.0
+    ],
+    "building_height_range_m": [
+      20.0,
+      70.0
+    ],
+    "road_coordinates_m": [
+      0.0,
+      60.0,
+      120.0,
+      180.0,
+      240.0
+    ],
+    "ugv_antenna_height_m": 1.5,
+    "uav_base_height_m": 30.0,
+    "uav_max_height_m": 120.0,
+    "roof_clearance_m": 10.0,
+    "horizontal_clearance_m": 30.0,
+    "surface_loss_range_db": [
+      2.0,
+      12.0
+    ],
+    "surface_phase_range_rad": [
+      2.7488935719,
+      3.5342917353
+    ],
+    "geometry_is_exact": true,
+    "map_features_use_materials": false,
+    "initial_uav_xyz_m": [
+      0.0,
+      0.0,
+      80.0
+    ],
+    "initial_ugv_xyz_m": [
+      0.0,
+      0.0,
+      1.5
+    ],
+    "initial_heading_rad": 0.0
+  },
+  "propagation": {
+    "mechanisms": [
+      "los",
+      "single_facade_specular_reflection",
+      "double_facade_specular_reflection"
+    ],
+    "speed_of_light_mps": 299792458.0,
+    "carrier_hz": 3500000000.0,
+    "signal_max_paths": 6,
+    "signal_gain_floor_db": -140.0,
+    "tau_min_s": 0.0,
+    "tau_max_s": 1.8e-06,
+    "rx_zenith_interval_rad": [
+      0,
+      3.141592653589793
+    ],
+    "tx_zenith_interval_rad": [
+      0,
+      3.141592653589793
+    ],
+    "phase_rule": "sionna_fresnel_coefficients_and_absolute_carrier_delay",
+    "backend": "nvidia_sionna_rt",
+    "rt_version": "2.2.0",
+    "rt_material": "fixed_h0_concrete_glass_mesh",
+    "rt_polarization": "V",
+    "rt_samples_per_src": 10000,
+    "rt_seed": 43001,
+    "rt_max_depth": 2,
+    "truncate_signal_by": "physical_power_after_delay_filter_full_fov",
+    "candidate_geometry_count": 16,
+    "geometry_sort": "validity_then_delay_then_stable_surface_id"
+  },
+  "sounding": {
+    "nt": 8,
+    "nr": 8,
+    "array_type": "horizontal_uca",
+    "array_normalization": "unit_l2",
+    "array_radius_rule": "half_wavelength_adjacent_spacing",
+    "n_frequencies": 128,
+    "delta_f_hz": 500000.0,
+    "frequency_offsets": "k_times_delta_f",
+    "narrowband_array": true,
+    "pilot_count": 8,
+    "pilot_energy_ep": 1.0,
+    "pilots": "sqrt_ep_times_identity",
+    "cp_s": 2e-06,
+    "clocks_and_hardware_delays_calibrated": true,
+    "noise_reference_gain_db": -90.0,
+    "noise_reference_frobenius_snr_db": 30.0,
+    "noise_model": "fixed_complex_iid_variance_from_reference"
+  },
+  "estimator": {
+    "method": "frequency_smoothed_joint_music_plus_ls",
+    "vectorization": "column_major_rx_then_tx_then_frequency",
+    "frequency_window_q": 64,
+    "max_fit_paths": 6,
+    "rank_threshold_source": "independent_noise_calibration",
+    "noise_calibration_trials": 1024,
+    "noise_false_alarm_quantile": 0.99,
+    "noise_calibration_seed": 73001,
+    "rank_threshold_value": 88.74758135294802,
+    "coarse_delay_bins": 128,
+    "coarse_azimuth_bins": 12,
+    "coarse_zenith_bins": 6,
+    "deduplicate_poles": true,
+    "refine_candidates": 24,
+    "refine_levels": 3,
+    "refine_points_per_axis": 3,
+    "refine_step_ratio": 0.5,
+    "peak_delay_separation_s": 5e-09,
+    "peak_direction_separation_deg": 5.0,
+    "spectrum_floor": 1e-07,
+    "gain_solver": "svd_or_qr_least_squares",
+    "numerical_rcond": 1e-06,
+    "calibration_file": null,
+    "quality_threshold_file": null
+  },
+  "ckm_target": {
+    "max_paths": 3,
+    "gain_min_db": -110.0,
+    "max_delay_s": 1.8e-06,
+    "ordering_for_storage": "descending_estimated_gain",
+    "empty_is_valid": true
+  },
+  "model": {
+    "hidden_widths": [
+      128,
+      128,
+      128
+    ],
+    "activation": "silu",
+    "committee_size": 3,
+    "geometry_candidate_count": 16,
+    "direction_parameterization": "normalized_hemisphere_vectors",
+    "delay_parameterization": "bounded_sigmoid",
+    "gain_center_db": -100.0,
+    "gain_scale_db": 20.0,
+    "probability_threshold": 0.5,
+    "set_loss_lambda_p": 1.0,
+    "set_matching": "exact_injection_logit_cost",
+    "final_prediction": "squared_gospa_medoid",
+    "variant": "public_geometry_residual"
+  },
+  "training": {
+    "optimizer": "adamw",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "logical_batch_size": 64,
+    "initialization_steps": 1500,
+    "update_steps_per_round": 800,
+    "gradient_clip_norm": 5.0,
+    "history_sampling": "half_uniform_half_equal_spatial_cells_within_K_preserving_empirical_K_marginal",
+    "update_mode": "warm_start_all_history",
+    "checkpoint_rule": "final_fixed_step",
+    "clone_initial_optimizer_between_policies": true,
+    "lr_schedule": "constant"
+  },
+  "metric": {
+    "gain_scale_db": 5.0,
+    "delay_scale_s": 2.5e-08,
+    "aoa_direction_scale_deg": 15.0,
+    "aod_direction_scale_deg": 15.0,
+    "gospa_c": 3.0,
+    "gospa_p": 2,
+    "gospa_alpha": 2,
+    "equal_cutoff_prefers_unmatched": true,
+    "azimuth_pole_sin_tolerance": 0.001,
+    "aggregation": "sqrt_weighted_mean_squared_gospa",
+    "matching": "exact_partial_assignment",
+    "implementation_version": "v1.4_float64_entry"
+  },
+  "acquisition": {
+    "candidates": 1024,
+    "candidate_sampling": "volume_and_road_arclength_stratified",
+    "candidate_weights": "explicit_sampling_cell_weights",
+    "history_uav_scale_m": 40.0,
+    "history_ugv_road_scale_m": 20.0,
+    "exploration_epsilon": 0.1,
+    "normalization_delta": 1e-08,
+    "history_includes_pose_valid_failed_probes": true,
+    "candidate_domain": "current_conservative"
+  },
+  "motion": {
+    "uav_speed_max_mps": 2.0,
+    "uav_vertical_speed_max_mps": 0.8,
+    "uav_curvature_max_per_m": 0.05,
+    "ugv_speed_max_mps": 1.0,
+    "action_duration_s": 20.0,
+    "integration_step_s": 0.25,
+    "beam_width": 6,
+    "preserve_feasible_recovery_suffix": true,
+    "recovery_anchor": "safe_airborne_rendezvous_above_road_service_site",
+    "service_time_accounting": "separate_from_net_sensing",
+    "baseline_route": "independent_layered_air_cover_and_road_sweep"
+  },
+  "experiment": {
+    "policies": [
+      "I-D",
+      "I-G",
+      "C-G",
+      "P-G"
+    ],
+    "pair_seeds": [
+      5101,
+      5102,
+      5103,
+      5104,
+      5105,
+      5106,
+      5107,
+      5108,
+      5109,
+      5110
+    ],
+    "initial_sensing_time_s": 1800.0,
+    "rounds_after_initial": 7,
+    "round_time_s": 1800.0,
+    "probe_frequency_hz": 1.0,
+    "copy_common_initial_data_and_weights": true,
+    "noise_pairing": "pair_seed_round_probe_index",
+    "evaluate_after_every_model_update": true,
+    "output_root": "experiments/paper_formal_240_20261017/runs",
+    "feedback_interval_s": 1800
+  },
+  "queries": {
+    "count": 4096,
+    "seed": 2026101811,
+    "distribution": "uniform_safe_volume_times_uniform_road_arclength",
+    "stored_weights": true,
+    "separation_from_candidates": "distinct_frozen_queries",
+    "equal_coordinate_tolerance_m": 1e-06
+  },
+  "runtime": {
+    "device": "cuda:0",
+    "torch_visible_device": 0,
+    "rt_worker_visible_device": 0,
+    "receiver_batch_size": 8,
+    "capture_prefetch_batch_size": 32,
+    "rf_dtype": "complex64",
+    "reference_rf_dtype": "complex128",
+    "network_dtype": "float32",
+    "metric_dtype": "float64",
+    "mixed_precision": "disabled_until_validated",
+    "physical_batch_size": "auto_bounded_by_logical_batch",
+    "music_chunk_size": "auto_after_microbenchmark",
+    "candidate_batch_size": "auto_after_microbenchmark",
+    "memory_fraction_of_free": 0.8,
+    "multi_gpu_policy": "distribute_independent_paired_seeds",
+    "use_torch_compile": false,
+    "persist_random_states": true
+  },
+  "physics_world": "W1a",
+  "formal_public_geometry": {
+    "capacity": 64,
+    "level": 2,
+    "free_slots_max": 1,
+    "output_Kmax": 3,
+    "nms_delay_ns": 5,
+    "nms_angle_deg": 5
+  }
+}

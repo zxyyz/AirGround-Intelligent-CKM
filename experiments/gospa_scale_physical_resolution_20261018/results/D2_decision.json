@@ -1,0 +1,20 @@
+{
+  "status": "not_executed",
+  "magnitude_trigger_met": true,
+  "effect_change_gt5pp_scales": {
+    "geometry": [
+      "Gain_strict",
+      "Gain_loose",
+      "Joint_strict",
+      "Cutoff_2"
+    ],
+    "cooperation": []
+  },
+  "ranking_reversal": false,
+  "all_main_seed_effects_positive": true,
+  "maximum_geometry_effect_change_pp": 9.82443259799853,
+  "large_I_D_K2plus_matching_change_acknowledged": true,
+  "rationale": "The protocol permits stopping when C main conclusions are robust. All 15 scales have 10/10 positive seeds and positive main CIs; D1 cross-decoding preserves the conclusions. Report magnitude and matching sensitivity without changing the optimization target or adding training.",
+  "new_training_steps": 0,
+  "new_RF_attempts": 0
+}

@@ -1,0 +1,27 @@
+{
+  "endpoint_minutes": 240,
+  "seeds": 10,
+  "fractions_mean": {
+    "I-D": {
+      "medoid_index_change_fraction": 0.09365234375,
+      "prediction_set_change_fraction": 0.09365234375,
+      "predicted_count_change_fraction": 0.0240234375
+    },
+    "I-G": {
+      "medoid_index_change_fraction": 0.044091796875,
+      "prediction_set_change_fraction": 0.044091796875,
+      "predicted_count_change_fraction": 0.0004638671875
+    },
+    "C-G": {
+      "medoid_index_change_fraction": 0.048291015625,
+      "prediction_set_change_fraction": 0.048291015625,
+      "predicted_count_change_fraction": 0.0004638671875
+    },
+    "P-G": {
+      "medoid_index_change_fraction": 0.0478759765625,
+      "prediction_set_change_fraction": 0.0478759765625,
+      "predicted_count_change_fraction": 0.0004150390625
+    }
+  },
+  "interpretation": "D1 changes selected predictions; C fixed-prediction count invariance does not apply to D1"
+}

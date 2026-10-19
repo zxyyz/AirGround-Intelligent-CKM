@@ -1,0 +1,9 @@
+# Versions used in the formal experiment (GPU/CUDA compatibility requires suitable builds).
+numpy==2.5.4
+scipy==1.18.1
+torch==2.13.0
+h5py==3.16.0
+matplotlib==3.11.2
+sionna-rt==2.2.0
+mitsuba==3.9.1
+drjit==1.5.0

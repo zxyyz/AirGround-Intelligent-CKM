@@ -5,6 +5,10 @@ Paper: Measurement-Efficient 6D Channel Knowledge Map Construction via Air–Gro
 
 本仓库包含论文的仿真源码、运行配置、汇总结果和结果图。正式实验采用已知建筑几何先验、几何路径级网络和空地协同测量。No raw CSI, per-query labels, trajectory caches, training records, or model checkpoints are uploaded.
 
+## Method documentation / 方法说明
+
+See [Method and implementation details](docs/method_details.md) for the candidate geometry and point/direction conventions, exact 40-dimensional feature layout, shared candidate and free-path network branches, the equivalent BCE formulation of the matching loss, replay sampling, duplicate suppression, and set-wise committee aggregation. These notes document the formal M3 learner without changing its code or reported results.
+
 ## Main results / 主要结果
 
 | Experiment | Learner / acquisition | Terminal GOSPA (mean ± SD, ten paired seeds) |

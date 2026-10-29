@@ -1,0 +1,12 @@
+{
+  "n": 4096,
+  "seed": 2026102702,
+  "fold": 4,
+  "sha256": "e48a9211481a4dcc026770c2c76cbeb3a5c91f72e260a42f95318322c0048ff9",
+  "drawn": 18127,
+  "fold_rejected": 14026,
+  "buffer_rejected": 5,
+  "reference_generated": false,
+  "created_at": "2026-10-27T11:16:53+08:00",
+  "selection": "safe air-volume x road-length conditioned on fold4 and outside joint training buffer (UAV10m AND road5m)"
+}

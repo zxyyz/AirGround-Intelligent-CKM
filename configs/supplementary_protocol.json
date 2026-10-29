@@ -1,0 +1,128 @@
+{
+  "created_at": "2026-10-27T12:43:47+08:00",
+  "status": "frozen_supplementary",
+  "requested_during_formal_training": true,
+  "role": "Descriptive sensitivity, separate from prespecified primary confirmation; no parameter selection or retraining.",
+  "scales": [
+    {
+      "id": "S0",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3
+    },
+    {
+      "id": "Gain_strict",
+      "gain_db": 3,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3
+    },
+    {
+      "id": "Gain_loose",
+      "gain_db": 8,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 3
+    },
+    {
+      "id": "Delay_10",
+      "gain_db": 5,
+      "delay_ns": 10,
+      "angle_deg": 15,
+      "cutoff": 3
+    },
+    {
+      "id": "Delay_15",
+      "gain_db": 5,
+      "delay_ns": 15,
+      "angle_deg": 15,
+      "cutoff": 3
+    },
+    {
+      "id": "Delay_40",
+      "gain_db": 5,
+      "delay_ns": 40,
+      "angle_deg": 15,
+      "cutoff": 3
+    },
+    {
+      "id": "Angle_10",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 10,
+      "cutoff": 3
+    },
+    {
+      "id": "Angle_25",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 25,
+      "cutoff": 3
+    },
+    {
+      "id": "Joint_strict",
+      "gain_db": 3,
+      "delay_ns": 10,
+      "angle_deg": 10,
+      "cutoff": 3
+    },
+    {
+      "id": "Joint_relaxed",
+      "gain_db": 8,
+      "delay_ns": 40,
+      "angle_deg": 25,
+      "cutoff": 3
+    },
+    {
+      "id": "S_phys",
+      "gain_db": 5,
+      "delay_ns": 15.625,
+      "angle_deg": 31.544493147895096,
+      "cutoff": 3
+    },
+    {
+      "id": "S_phys_Q",
+      "gain_db": 5,
+      "delay_ns": 31.25,
+      "angle_deg": 31.544493147895096,
+      "cutoff": 3
+    },
+    {
+      "id": "S_phys_half",
+      "gain_db": 5,
+      "delay_ns": 15.625,
+      "angle_deg": 15.772246573947548,
+      "cutoff": 3
+    },
+    {
+      "id": "Cutoff_2",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 2
+    },
+    {
+      "id": "Cutoff_4",
+      "gain_db": 5,
+      "delay_ns": 25,
+      "angle_deg": 15,
+      "cutoff": 4
+    }
+  ],
+  "comparison_scope": "50 full-data ensembles; fixed weights, thresholds, predictions and medoid; recompute assignment under each scale",
+  "path_caps": [
+    1,
+    2,
+    3,
+    4,
+    6
+  ],
+  "front_end": "Use identical archived Sionna rays and noiseless signals with retained target cap6; verify its first3 reproduce the original reference.",
+  "prohibitions": [
+    "No new training scale selection",
+    "No replacement of the primary 3-path target",
+    "No pooling historical and current outcomes"
+  ],
+  "source_sha256": "da61592a2e97c153b91951494761aa691dcffb3e51051fa27d1adac6fdc4d2e0"
+}

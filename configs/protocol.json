@@ -1,0 +1,105 @@
+{
+  "schema_version": "geometry-attribution-v1",
+  "status": "frozen",
+  "frozen": true,
+  "variants": [
+    "Coord",
+    "RawMap",
+    "GeoPool",
+    "GeoDirect",
+    "Full"
+  ],
+  "main_curves": [
+    "Coord",
+    "RawMap",
+    "Full"
+  ],
+  "ratios": [
+    0.1,
+    0.25,
+    0.5,
+    1
+  ],
+  "flows": [
+    5101,
+    5102,
+    5103,
+    5104,
+    5105,
+    5106,
+    5107,
+    5108,
+    5109,
+    5110
+  ],
+  "members": 3,
+  "pilot_flows": [
+    2026102701,
+    2026102702,
+    2026102703
+  ],
+  "learning_rates": [
+    0.0003,
+    0.001,
+    0.003
+  ],
+  "learning_rate_groups": [
+    [
+      "Coord"
+    ],
+    [
+      "RawMap",
+      "GeoPool"
+    ],
+    [
+      "GeoDirect",
+      "Full"
+    ]
+  ],
+  "pilot_steps": [
+    7100,
+    14200,
+    28400
+  ],
+  "extension_steps": 56800,
+  "extension_rule": "If any selected variant improves development RMS GOSPA by >1% from14200 to28400, extend ALL learning-rate candidates and variants to56800; freeze after that without confirmation-driven tuning.",
+  "thresholds": [
+    0.1,
+    0.25,
+    0.35,
+    0.5,
+    0.65,
+    0.75,
+    0.9
+  ],
+  "batch_size": 64,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5,
+  "precision": "float32; TF32 disabled",
+  "query_seed": 2026102702,
+  "query_count": 4096,
+  "training_pool": "Frozen9556frames per noise flow; previous dataset copied unchanged",
+  "primary_contrasts": [
+    [
+      "RawMap",
+      "Coord"
+    ],
+    [
+      "GeoPool",
+      "RawMap"
+    ],
+    [
+      "Full",
+      "GeoDirect"
+    ],
+    [
+      "Full",
+      "RawMap"
+    ]
+  ],
+  "formal_ensemble_runs": 140,
+  "final_model_members": 420,
+  "scope": "Existing learner extraction; no new loss, no acquisition or planner experiments",
+  "effective_freeze": "freeze.json",
+  "frozen_at": "2026-10-27T12:24:38+08:00"
+}

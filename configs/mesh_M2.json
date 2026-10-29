@@ -1,0 +1,1037 @@
+{
+  "mode": "fixed_h0",
+  "seeds": {
+    "geometry_seed": 101,
+    "architecture_seed": 2026101711,
+    "material_seed": 2026101712
+  },
+  "buildings": [
+    {
+      "building_id": 0,
+      "bounds": [
+        10.0,
+        10.0,
+        50.0,
+        50.0,
+        33.91634408790371
+      ],
+      "floor_count": 10,
+      "floor_height_m": 3.391634408790371,
+      "roof_height_m": 0.0,
+      "height_m": 33.91634408790371,
+      "window_to_wall_ratio": 0.46105681615702004,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.7383975806325613,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 1,
+      "bounds": [
+        70.0,
+        10.0,
+        110.0,
+        50.0,
+        25.413225810718263
+      ],
+      "floor_count": 8,
+      "floor_height_m": 3.176653226339783,
+      "roof_height_m": 0.0,
+      "height_m": 25.413225810718263,
+      "window_to_wall_ratio": 0.4289699045945945,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.5993727026023614,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 2,
+      "bounds": [
+        130.0,
+        10.0,
+        170.0,
+        50.0,
+        29.59758056031322
+      ],
+      "floor_count": 9,
+      "floor_height_m": 3.2886200622570243,
+      "roof_height_m": 0.0,
+      "height_m": 29.59758056031322,
+      "window_to_wall_ratio": 0.2734004574681915,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.7021650629546536,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 3,
+      "bounds": [
+        190.0,
+        10.0,
+        230.0,
+        50.0,
+        52.795709772601434
+      ],
+      "floor_count": 16,
+      "floor_height_m": 3.2997318607875896,
+      "roof_height_m": 0.0,
+      "height_m": 52.795709772601434,
+      "window_to_wall_ratio": 0.2982987180329019,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.4568813477056395,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 4,
+      "bounds": [
+        10.0,
+        70.0,
+        50.0,
+        110.0,
+        50.05718243815859
+      ],
+      "floor_count": 15,
+      "floor_height_m": 3.3371454958772393,
+      "roof_height_m": 0.0,
+      "height_m": 50.05718243815859,
+      "window_to_wall_ratio": 0.4671795323425217,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.5875685590063774,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 5,
+      "bounds": [
+        70.0,
+        70.0,
+        110.0,
+        110.0,
+        54.91888508003183
+      ],
+      "floor_count": 17,
+      "floor_height_m": 3.230522651766578,
+      "roof_height_m": 0.0,
+      "height_m": 54.91888508003183,
+      "window_to_wall_ratio": 0.28833721250533684,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.5136143846864352,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 6,
+      "bounds": [
+        130.0,
+        70.0,
+        170.0,
+        110.0,
+        24.612679214830493
+      ],
+      "floor_count": 7,
+      "floor_height_m": 3.5160970306900703,
+      "roof_height_m": 0.0,
+      "height_m": 24.612679214830493,
+      "window_to_wall_ratio": 0.2743675099259494,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.5138520024981157,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 7,
+      "bounds": [
+        190.0,
+        70.0,
+        230.0,
+        110.0,
+        65.29249007750556
+      ],
+      "floor_count": 20,
+      "floor_height_m": 3.264624503875278,
+      "roof_height_m": 0.0,
+      "height_m": 65.29249007750556,
+      "window_to_wall_ratio": 0.20657075424476784,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.688974033816341,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 8,
+      "bounds": [
+        10.0,
+        130.0,
+        50.0,
+        170.0,
+        30.897968406620883
+      ],
+      "floor_count": 9,
+      "floor_height_m": 3.433107600735654,
+      "roof_height_m": 0.0,
+      "height_m": 30.897968406620883,
+      "window_to_wall_ratio": 0.4256408563336053,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.5023513757450793,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 9,
+      "bounds": [
+        70.0,
+        130.0,
+        110.0,
+        170.0,
+        69.7220823434881
+      ],
+      "floor_count": 21,
+      "floor_height_m": 3.320099159213719,
+      "roof_height_m": 0.0,
+      "height_m": 69.7220823434881,
+      "window_to_wall_ratio": 0.42749347314552555,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.7026558909827434,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 10,
+      "bounds": [
+        130.0,
+        130.0,
+        170.0,
+        170.0,
+        68.03617673827483
+      ],
+      "floor_count": 21,
+      "floor_height_m": 3.2398179399178493,
+      "roof_height_m": 0.0,
+      "height_m": 68.03617673827483,
+      "window_to_wall_ratio": 0.48929963367138646,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.7054663686433569,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 11,
+      "bounds": [
+        190.0,
+        130.0,
+        230.0,
+        170.0,
+        65.3125435983222
+      ],
+      "floor_count": 20,
+      "floor_height_m": 3.26562717991611,
+      "roof_height_m": 0.0,
+      "height_m": 65.3125435983222,
+      "window_to_wall_ratio": 0.41067129400951413,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.743415225565706,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 12,
+      "bounds": [
+        10.0,
+        190.0,
+        50.0,
+        230.0,
+        47.68829453793023
+      ],
+      "floor_count": 14,
+      "floor_height_m": 3.4063067527093023,
+      "roof_height_m": 0.0,
+      "height_m": 47.68829453793023,
+      "window_to_wall_ratio": 0.3672138116292045,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.6221689909227806,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 13,
+      "bounds": [
+        70.0,
+        190.0,
+        110.0,
+        230.0,
+        41.32272942862585
+      ],
+      "floor_count": 13,
+      "floor_height_m": 3.178671494509681,
+      "roof_height_m": 0.0,
+      "height_m": 41.32272942862585,
+      "window_to_wall_ratio": 0.31010715781510356,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.527610581719153,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 14,
+      "bounds": [
+        130.0,
+        190.0,
+        170.0,
+        230.0,
+        54.26220875155245
+      ],
+      "floor_count": 16,
+      "floor_height_m": 3.391388046972028,
+      "roof_height_m": 0.0,
+      "height_m": 54.26220875155245,
+      "window_to_wall_ratio": 0.21813543828765586,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.36742504243373203,
+      "rejected_height_draws": 0
+    },
+    {
+      "building_id": 15,
+      "bounds": [
+        190.0,
+        190.0,
+        230.0,
+        230.0,
+        41.87822129661462
+      ],
+      "floor_count": 13,
+      "floor_height_m": 3.2214016382011246,
+      "roof_height_m": 0.0,
+      "height_m": 41.87822129661462,
+      "window_to_wall_ratio": 0.4453550296545909,
+      "facade_class": "concrete_dominant",
+      "wall_material": "concrete",
+      "window_material": "glass",
+      "window_columns_per_40m": 4,
+      "window_height_fraction": 0.6,
+      "window_offset_fraction": 0.729848974271734,
+      "rejected_height_draws": 0
+    }
+  ],
+  "materials": {
+    "concrete": {
+      "itu_type": "concrete",
+      "thickness_m": 1.0,
+      "scattering_coefficient": 0.0
+    },
+    "glass": {
+      "itu_type": "glass",
+      "thickness_m": 0.01,
+      "scattering_coefficient": 0.0
+    },
+    "brick": {
+      "itu_type": "brick",
+      "thickness_m": 0.2,
+      "scattering_coefficient": 0.0
+    },
+    "asphalt": {
+      "itu_type": "asphalt_concrete",
+      "thickness_m": 0.1,
+      "scattering_coefficient": 0.0
+    },
+    "ground": {
+      "itu_type": "medium_dry_ground",
+      "thickness_m": 1.0,
+      "scattering_coefficient": 0.0
+    }
+  },
+  "meshes": [
+    {
+      "name": "mesh_concrete",
+      "material": "concrete",
+      "path": "assets/concrete.ply",
+      "sha256": "ab7fa24af032cb4407aee217c38aabddf5d10faff1254b5f58b41206a8af91c9",
+      "vertices": 58752,
+      "triangles": 29376,
+      "surface_area_m2": 128320.09301389141,
+      "triangle_metadata_path": "assets/concrete_triangles.json"
+    },
+    {
+      "name": "mesh_glass",
+      "material": "glass",
+      "path": "assets/glass.ply",
+      "sha256": "f1b952a2c2d3813ce44151e586ff808cca98b5e1dfdded863343129ccbe44518",
+      "vertices": 14656,
+      "triangles": 7328,
+      "surface_area_m2": 43795.798529068095,
+      "triangle_metadata_path": "assets/glass_triangles.json"
+    }
+  ],
+  "ground_meshes": [
+    {
+      "name": "mesh_asphalt",
+      "material": "asphalt",
+      "path": "assets/asphalt.ply",
+      "sha256": "be58d2343b7ffa6a5424f35eac2e3b3d4f2ceb1a83af9a1f3de9ae1cfa04b536",
+      "vertices": 580,
+      "triangles": 290,
+      "surface_area_m2": 22500.0,
+      "triangle_metadata_path": "assets/asphalt_triangles.json"
+    },
+    {
+      "name": "mesh_ground",
+      "material": "ground",
+      "path": "assets/ground.ply",
+      "sha256": "bfbbc6c9d74ce6b454db26230bf036e9e0e08c9bf0deb1158c7b4553cd983626",
+      "vertices": 512,
+      "triangles": 256,
+      "surface_area_m2": 14400.0,
+      "triangle_metadata_path": "assets/ground_triangles.json"
+    }
+  ],
+  "ground_checks": {
+    "extent_m": [
+      -5.0,
+      245.0
+    ],
+    "road_width_m": 10.0,
+    "total_area_m2": 36900.0,
+    "asphalt_area_m2": 22500.0,
+    "land_area_m2": 14400.0,
+    "no_ground_under_buildings": true,
+    "nonoverlapping_planar_partition": true
+  },
+  "geometry_hash": "3c5c0b6cd79edde2b0311aec17ba65b14c20647ad7cecaec448b91ea0201ebbb",
+  "facade_checks": [
+    {
+      "building_id": 0,
+      "facade": 0,
+      "area_m2": 1356.6537635161467,
+      "window_area_m2": 625.494464834194,
+      "window_ratio_excluding_roof_band": 0.4610568161570199,
+      "window_ratio_total_facade": 0.4610568161570205,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 0,
+      "facade": 1,
+      "area_m2": 1356.6537635161467,
+      "window_area_m2": 625.494464834194,
+      "window_ratio_excluding_roof_band": 0.4610568161570199,
+      "window_ratio_total_facade": 0.4610568161570205,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 0,
+      "facade": 2,
+      "area_m2": 1356.6537635161467,
+      "window_area_m2": 625.494464834194,
+      "window_ratio_excluding_roof_band": 0.4610568161570199,
+      "window_ratio_total_facade": 0.4610568161570205,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 0,
+      "facade": 3,
+      "area_m2": 1356.6537635161467,
+      "window_area_m2": 625.494464834194,
+      "window_ratio_excluding_roof_band": 0.4610568161570199,
+      "window_ratio_total_facade": 0.4610568161570205,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 1,
+      "facade": 0,
+      "area_m2": 1016.5290324287295,
+      "window_area_m2": 436.060362058588,
+      "window_ratio_excluding_roof_band": 0.4289699045945945,
+      "window_ratio_total_facade": 0.42896990459459494,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 1,
+      "facade": 1,
+      "area_m2": 1016.5290324287295,
+      "window_area_m2": 436.060362058588,
+      "window_ratio_excluding_roof_band": 0.4289699045945945,
+      "window_ratio_total_facade": 0.42896990459459494,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 1,
+      "facade": 2,
+      "area_m2": 1016.5290324287295,
+      "window_area_m2": 436.060362058588,
+      "window_ratio_excluding_roof_band": 0.4289699045945945,
+      "window_ratio_total_facade": 0.42896990459459494,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 1,
+      "facade": 3,
+      "area_m2": 1016.5290324287295,
+      "window_area_m2": 436.060362058588,
+      "window_ratio_excluding_roof_band": 0.4289699045945945,
+      "window_ratio_total_facade": 0.42896990459459494,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 2,
+      "facade": 0,
+      "area_m2": 1183.9032224125294,
+      "window_area_m2": 323.67968260565146,
+      "window_ratio_excluding_roof_band": 0.2734004574681915,
+      "window_ratio_total_facade": 0.27340045746819136,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 2,
+      "facade": 1,
+      "area_m2": 1183.9032224125294,
+      "window_area_m2": 323.67968260565146,
+      "window_ratio_excluding_roof_band": 0.2734004574681915,
+      "window_ratio_total_facade": 0.27340045746819136,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 2,
+      "facade": 2,
+      "area_m2": 1183.9032224125294,
+      "window_area_m2": 323.67968260565146,
+      "window_ratio_excluding_roof_band": 0.2734004574681915,
+      "window_ratio_total_facade": 0.27340045746819136,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 2,
+      "facade": 3,
+      "area_m2": 1183.9032224125294,
+      "window_area_m2": 323.67968260565146,
+      "window_ratio_excluding_roof_band": 0.2734004574681915,
+      "window_ratio_total_facade": 0.27340045746819136,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 3,
+      "facade": 0,
+      "area_m2": 2111.8283909040542,
+      "window_area_m2": 629.9557017121668,
+      "window_ratio_excluding_roof_band": 0.29829871803290214,
+      "window_ratio_total_facade": 0.2982987180329026,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 3,
+      "facade": 1,
+      "area_m2": 2111.8283909040542,
+      "window_area_m2": 629.9557017121668,
+      "window_ratio_excluding_roof_band": 0.29829871803290214,
+      "window_ratio_total_facade": 0.2982987180329026,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 3,
+      "facade": 2,
+      "area_m2": 2111.8283909040542,
+      "window_area_m2": 629.9557017121668,
+      "window_ratio_excluding_roof_band": 0.29829871803290214,
+      "window_ratio_total_facade": 0.2982987180329026,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 3,
+      "facade": 3,
+      "area_m2": 2111.8283909040542,
+      "window_area_m2": 629.9557017121668,
+      "window_ratio_excluding_roof_band": 0.29829871803290214,
+      "window_ratio_total_facade": 0.2982987180329026,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 4,
+      "facade": 0,
+      "area_m2": 2002.2872975263417,
+      "window_area_m2": 935.4276432737297,
+      "window_ratio_excluding_roof_band": 0.4671795323425222,
+      "window_ratio_total_facade": 0.4671795323425226,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 4,
+      "facade": 1,
+      "area_m2": 2002.2872975263417,
+      "window_area_m2": 935.4276432737297,
+      "window_ratio_excluding_roof_band": 0.4671795323425222,
+      "window_ratio_total_facade": 0.4671795323425226,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 4,
+      "facade": 2,
+      "area_m2": 2002.2872975263417,
+      "window_area_m2": 935.4276432737297,
+      "window_ratio_excluding_roof_band": 0.4671795323425222,
+      "window_ratio_total_facade": 0.4671795323425226,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 4,
+      "facade": 3,
+      "area_m2": 2002.2872975263417,
+      "window_area_m2": 935.4276432737297,
+      "window_ratio_excluding_roof_band": 0.4671795323425222,
+      "window_ratio_total_facade": 0.4671795323425226,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 5,
+      "facade": 0,
+      "area_m2": 2196.7554032012667,
+      "window_area_m2": 633.4063295150937,
+      "window_ratio_excluding_roof_band": 0.28833721250533745,
+      "window_ratio_total_facade": 0.2883372125053383,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 5,
+      "facade": 1,
+      "area_m2": 2196.7554032012667,
+      "window_area_m2": 633.4063295150937,
+      "window_ratio_excluding_roof_band": 0.28833721250533745,
+      "window_ratio_total_facade": 0.2883372125053383,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 5,
+      "facade": 2,
+      "area_m2": 2196.7554032012667,
+      "window_area_m2": 633.4063295150937,
+      "window_ratio_excluding_roof_band": 0.28833721250533745,
+      "window_ratio_total_facade": 0.2883372125053383,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 5,
+      "facade": 3,
+      "area_m2": 2196.7554032012667,
+      "window_area_m2": 633.4063295150937,
+      "window_ratio_excluding_roof_band": 0.28833721250533745,
+      "window_ratio_total_facade": 0.2883372125053383,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 6,
+      "facade": 0,
+      "area_m2": 984.5071685932198,
+      "window_area_m2": 270.11678035116864,
+      "window_ratio_excluding_roof_band": 0.2743675099259495,
+      "window_ratio_total_facade": 0.27436750992594944,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 6,
+      "facade": 1,
+      "area_m2": 984.5071685932198,
+      "window_area_m2": 270.11678035116864,
+      "window_ratio_excluding_roof_band": 0.2743675099259495,
+      "window_ratio_total_facade": 0.27436750992594944,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 6,
+      "facade": 2,
+      "area_m2": 984.5071685932198,
+      "window_area_m2": 270.11678035116864,
+      "window_ratio_excluding_roof_band": 0.2743675099259495,
+      "window_ratio_total_facade": 0.27436750992594944,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 6,
+      "facade": 3,
+      "area_m2": 984.5071685932198,
+      "window_area_m2": 270.11678035116864,
+      "window_ratio_excluding_roof_band": 0.2743675099259495,
+      "window_ratio_total_facade": 0.27436750992594944,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 7,
+      "facade": 0,
+      "area_m2": 2611.699603100222,
+      "window_area_m2": 539.5007568731731,
+      "window_ratio_excluding_roof_band": 0.20657075424476762,
+      "window_ratio_total_facade": 0.20657075424476765,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 7,
+      "facade": 1,
+      "area_m2": 2611.699603100222,
+      "window_area_m2": 539.5007568731731,
+      "window_ratio_excluding_roof_band": 0.20657075424476762,
+      "window_ratio_total_facade": 0.20657075424476765,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 7,
+      "facade": 2,
+      "area_m2": 2611.699603100222,
+      "window_area_m2": 539.5007568731731,
+      "window_ratio_excluding_roof_band": 0.20657075424476762,
+      "window_ratio_total_facade": 0.20657075424476765,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 7,
+      "facade": 3,
+      "area_m2": 2611.699603100222,
+      "window_area_m2": 539.5007568731731,
+      "window_ratio_excluding_roof_band": 0.20657075424476762,
+      "window_ratio_total_facade": 0.20657075424476765,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 8,
+      "facade": 0,
+      "area_m2": 1235.9187362648347,
+      "window_area_m2": 526.0575092625116,
+      "window_ratio_excluding_roof_band": 0.42564085633360516,
+      "window_ratio_total_facade": 0.4256408563336054,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 8,
+      "facade": 1,
+      "area_m2": 1235.9187362648347,
+      "window_area_m2": 526.0575092625116,
+      "window_ratio_excluding_roof_band": 0.42564085633360516,
+      "window_ratio_total_facade": 0.4256408563336054,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 8,
+      "facade": 2,
+      "area_m2": 1235.9187362648347,
+      "window_area_m2": 526.0575092625116,
+      "window_ratio_excluding_roof_band": 0.42564085633360516,
+      "window_ratio_total_facade": 0.4256408563336054,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 8,
+      "facade": 3,
+      "area_m2": 1235.9187362648347,
+      "window_area_m2": 526.0575092625116,
+      "window_ratio_excluding_roof_band": 0.42564085633360516,
+      "window_ratio_total_facade": 0.4256408563336054,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 9,
+      "facade": 0,
+      "area_m2": 2788.8832937395186,
+      "window_area_m2": 1192.2294054382412,
+      "window_ratio_excluding_roof_band": 0.4274934731455252,
+      "window_ratio_total_facade": 0.42749347314552605,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 9,
+      "facade": 1,
+      "area_m2": 2788.8832937395186,
+      "window_area_m2": 1192.2294054382412,
+      "window_ratio_excluding_roof_band": 0.4274934731455252,
+      "window_ratio_total_facade": 0.42749347314552605,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 9,
+      "facade": 2,
+      "area_m2": 2788.8832937395186,
+      "window_area_m2": 1192.2294054382412,
+      "window_ratio_excluding_roof_band": 0.4274934731455252,
+      "window_ratio_total_facade": 0.42749347314552605,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 9,
+      "facade": 3,
+      "area_m2": 2788.8832937395186,
+      "window_area_m2": 1192.2294054382412,
+      "window_ratio_excluding_roof_band": 0.4274934731455252,
+      "window_ratio_total_facade": 0.42749347314552605,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 10,
+      "facade": 0,
+      "area_m2": 2721.447069531003,
+      "window_area_m2": 1331.603054177587,
+      "window_ratio_excluding_roof_band": 0.48929963367138785,
+      "window_ratio_total_facade": 0.4892996336713861,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 10,
+      "facade": 1,
+      "area_m2": 2721.447069531003,
+      "window_area_m2": 1331.603054177587,
+      "window_ratio_excluding_roof_band": 0.48929963367138785,
+      "window_ratio_total_facade": 0.4892996336713861,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 10,
+      "facade": 2,
+      "area_m2": 2721.447069531003,
+      "window_area_m2": 1331.603054177587,
+      "window_ratio_excluding_roof_band": 0.48929963367138785,
+      "window_ratio_total_facade": 0.4892996336713861,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 10,
+      "facade": 3,
+      "area_m2": 2721.447069531003,
+      "window_area_m2": 1331.603054177587,
+      "window_ratio_excluding_roof_band": 0.48929963367138785,
+      "window_ratio_total_facade": 0.4892996336713861,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 11,
+      "facade": 0,
+      "area_m2": 2612.5017439328826,
+      "window_area_m2": 1072.879471783033,
+      "window_ratio_excluding_roof_band": 0.41067129400951474,
+      "window_ratio_total_facade": 0.4106712940095156,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 11,
+      "facade": 1,
+      "area_m2": 2612.5017439328826,
+      "window_area_m2": 1072.879471783033,
+      "window_ratio_excluding_roof_band": 0.41067129400951474,
+      "window_ratio_total_facade": 0.4106712940095156,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 11,
+      "facade": 2,
+      "area_m2": 2612.5017439328826,
+      "window_area_m2": 1072.879471783033,
+      "window_ratio_excluding_roof_band": 0.41067129400951474,
+      "window_ratio_total_facade": 0.4106712940095156,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 11,
+      "facade": 3,
+      "area_m2": 2612.5017439328826,
+      "window_area_m2": 1072.879471783033,
+      "window_ratio_excluding_roof_band": 0.41067129400951474,
+      "window_ratio_total_facade": 0.4106712940095156,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 12,
+      "facade": 0,
+      "area_m2": 1907.5317815172164,
+      "window_area_m2": 700.4720162947826,
+      "window_ratio_excluding_roof_band": 0.36721381162920513,
+      "window_ratio_total_facade": 0.3672138116292038,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 12,
+      "facade": 1,
+      "area_m2": 1907.5317815172164,
+      "window_area_m2": 700.4720162947826,
+      "window_ratio_excluding_roof_band": 0.36721381162920513,
+      "window_ratio_total_facade": 0.3672138116292038,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 12,
+      "facade": 2,
+      "area_m2": 1907.5317815172164,
+      "window_area_m2": 700.4720162947826,
+      "window_ratio_excluding_roof_band": 0.36721381162920513,
+      "window_ratio_total_facade": 0.3672138116292038,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 12,
+      "facade": 3,
+      "area_m2": 1907.5317815172164,
+      "window_area_m2": 700.4720162947826,
+      "window_ratio_excluding_roof_band": 0.36721381162920513,
+      "window_ratio_total_facade": 0.3672138116292038,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 13,
+      "facade": 0,
+      "area_m2": 1652.9091771450353,
+      "window_area_m2": 512.5789670509479,
+      "window_ratio_excluding_roof_band": 0.3101071578151035,
+      "window_ratio_total_facade": 0.31010715781510323,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 13,
+      "facade": 1,
+      "area_m2": 1652.9091771450353,
+      "window_area_m2": 512.5789670509479,
+      "window_ratio_excluding_roof_band": 0.3101071578151035,
+      "window_ratio_total_facade": 0.31010715781510323,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 13,
+      "facade": 2,
+      "area_m2": 1652.9091771450353,
+      "window_area_m2": 512.5789670509479,
+      "window_ratio_excluding_roof_band": 0.3101071578151035,
+      "window_ratio_total_facade": 0.31010715781510323,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 13,
+      "facade": 3,
+      "area_m2": 1652.9091771450353,
+      "window_area_m2": 512.5789670509479,
+      "window_ratio_excluding_roof_band": 0.3101071578151035,
+      "window_ratio_total_facade": 0.31010715781510323,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 14,
+      "facade": 0,
+      "area_m2": 2170.4883500620977,
+      "window_area_m2": 473.4604275390468,
+      "window_ratio_excluding_roof_band": 0.21813543828765586,
+      "window_ratio_total_facade": 0.21813543828765591,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 14,
+      "facade": 1,
+      "area_m2": 2170.4883500620977,
+      "window_area_m2": 473.4604275390468,
+      "window_ratio_excluding_roof_band": 0.21813543828765586,
+      "window_ratio_total_facade": 0.21813543828765591,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 14,
+      "facade": 2,
+      "area_m2": 2170.4883500620977,
+      "window_area_m2": 473.4604275390468,
+      "window_ratio_excluding_roof_band": 0.21813543828765586,
+      "window_ratio_total_facade": 0.21813543828765591,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 14,
+      "facade": 3,
+      "area_m2": 2170.4883500620977,
+      "window_area_m2": 473.4604275390468,
+      "window_ratio_excluding_roof_band": 0.21813543828765586,
+      "window_ratio_total_facade": 0.21813543828765591,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 15,
+      "facade": 0,
+      "area_m2": 1675.1288518645915,
+      "window_area_m2": 746.0270594974127,
+      "window_ratio_excluding_roof_band": 0.44535502965459073,
+      "window_ratio_total_facade": 0.44535502965458895,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 15,
+      "facade": 1,
+      "area_m2": 1675.1288518645915,
+      "window_area_m2": 746.0270594974127,
+      "window_ratio_excluding_roof_band": 0.44535502965459073,
+      "window_ratio_total_facade": 0.44535502965458895,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 15,
+      "facade": 2,
+      "area_m2": 1675.1288518645915,
+      "window_area_m2": 746.0270594974127,
+      "window_ratio_excluding_roof_band": 0.44535502965459073,
+      "window_ratio_total_facade": 0.44535502965458895,
+      "nonoverlap": true
+    },
+    {
+      "building_id": 15,
+      "facade": 3,
+      "area_m2": 1675.1288518645915,
+      "window_area_m2": 746.0270594974127,
+      "window_ratio_excluding_roof_band": 0.44535502965459073,
+      "window_ratio_total_facade": 0.44535502965458895,
+      "nonoverlap": true
+    }
+  ],
+  "checks": {
+    "no_window_wall_overlap": true,
+    "closed_roof_bottom": true,
+    "building_height_bound": true,
+    "road_nodes_outside_buildings": true,
+    "source_fixed_h0_unchanged": true
+  },
+  "notes": [
+    "Random-floor ranges are synthetic choices, not Sionna defaults or city statistics.",
+    "Thin-slab thickness is an EM material parameter.",
+    "Glass panes replace concrete rather than overlaying opaque wall faces.",
+    "No refraction is assumed unless explicitly enabled in the solver."
+  ]
+}

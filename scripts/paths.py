@@ -21,5 +21,5 @@ def sha(path):
     with Path(path).open('rb') as f:
         for b in iter(lambda:f.read(1048576),b''):h.update(b)
     return h.hexdigest()
-def seed(*parts):return int.from_bytes(hashlib.sha256(':'.join(map(str,('geometry-attribution-20261027',*parts))).encode()).digest()[:8],'big')%(2**63-1)
+def seed(*parts):return int.from_bytes(hashlib.sha256(':'.join(map(str,('reviewer-revision-20261029',*parts))).encode()).digest()[:8],'big')%(2**63-1)
 def run_dir(stage,variant,lr,pair,ratio=1.):return EXP/f'runs/{stage}/ratio_{ratio:.2f}/{variant}/lr_{lr:g}/{pair}'

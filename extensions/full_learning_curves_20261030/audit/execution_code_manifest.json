@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-30T00:55:43+08:00",
+  "sha256": {
+    "scripts/common.py": "06a96b5ba0b14e173f50cbeeed60b371a048e3e07b9ba8958a73abfaa2dbbfac",
+    "scripts/prepare.py": "c6f91d569229fc80702f9ffcd629e28440fc06c86f2fbf53594b9baff9207bcd",
+    "scripts/run_group.py": "ae81930f7a57877fa171527b2519f506c0bdd8572fc0721f9c019fae7b296634",
+    "scripts/execute.py": "8560408ebe94ecc1f943fe84da67100778e39b47fe506f0ae98f972be1f61432",
+    "manifests/tasks.json": "ba65e41872b843abe21666d0caf40911bb049599e1188d1656aa820ce2cfb439",
+    "audit/extension_protocol.json": "6df2d17960e7d5381cb051236c57f61e669b82ec2ee4b8b67ae6528973031e07"
+  },
+  "adaptation": "Original source bytes unchanged; wrapper redirects output paths only and requires the original frozen batches.",
+  "original_metadata_sha256": {
+    "manifests/tasks.json": "524bddf53fba0ebb7440fb9cf2f336b908d8eb27243b88db8794fb0eca33a784",
+    "audit/extension_protocol.json": "4b65934cc82975fd6a3a6316358ad2fa42b4060822626157840c134a2dbe5651"
+  },
+  "publication_adaptation": "Only metadata batch/baseline paths made relative and session administration fields omitted; executed scientific code unchanged."
+}

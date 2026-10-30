@@ -1,0 +1,1122 @@
+[
+  {
+    "variant": "Coord",
+    "pair": 5101,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5102,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5103,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5104,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5105,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5106,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5107,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5108,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5109,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5110,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Coord/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5101,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5102,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5103,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5104,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5105,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5106,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5107,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5108,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5109,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5110,
+    "ratio": 0.1,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/RawMap/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5101,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5101/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5102,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5102/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5103,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5103/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5104,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5104/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5105,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5105/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5106,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5106/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5107,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5107/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5108,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5108/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5109,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5109/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5110,
+    "ratio": 0.1,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.10/Full/lr_0.0003/5110/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5101,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5102,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5103,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5104,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5105,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5106,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5107,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5108,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5109,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5110,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Coord/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5101,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5102,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5103,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5104,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5105,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5106,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5107,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5108,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5109,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5110,
+    "ratio": 0.25,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/RawMap/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5101,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5101/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5102,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5102/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5103,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5103/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5104,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5104/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5105,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5105/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5106,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5106/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5107,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5107/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5108,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5108/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5109,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5109/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5110,
+    "ratio": 0.25,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.25/Full/lr_0.0003/5110/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5101,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5102,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5103,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5104,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5105,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5106,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5107,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5108,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5109,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5110,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Coord/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5101,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5102,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5103,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5104,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5105,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5106,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5107,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5108,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5109,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5110,
+    "ratio": 0.5,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/RawMap/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5101,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5101/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5102,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5102/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5103,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5103/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5104,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5104/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5105,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5105/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5106,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5106/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5107,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5107/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5108,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5108/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5109,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5109/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5110,
+    "ratio": 0.5,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_0.50/Full/lr_0.0003/5110/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5101,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5102,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5103,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5104,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5105,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5106,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5107,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5108,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5109,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "Coord",
+    "pair": 5110,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Coord/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5101,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5102,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5103,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5104,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5105,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5106,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5107,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5108,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5109,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "RawMap",
+    "pair": 5110,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/RawMap/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5101,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5101/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5102,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5102/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5103,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5103/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5104,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5104/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5105,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5105/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5106,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5106/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5107,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5107/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5108,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5108/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5109,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5109/step_056800"
+  },
+  {
+    "variant": "GeoPool",
+    "pair": 5110,
+    "ratio": 1.0,
+    "lr": 0.003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoPool/lr_0.003/5110/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5101,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5101/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5102,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5102/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5103,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5103/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5104,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5104/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5105,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5105/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5106,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5106/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5107,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5107/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5108,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5108/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5109,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5109/step_056800"
+  },
+  {
+    "variant": "GeoDirect",
+    "pair": 5110,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/GeoDirect/lr_0.0003/5110/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5101,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5101/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5102,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5102/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5103,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5103/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5104,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5104/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5105,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5105/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5106,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5106/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5107,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5107/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5108,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5108/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5109,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5109/step_056800"
+  },
+  {
+    "variant": "Full",
+    "pair": 5110,
+    "ratio": 1.0,
+    "lr": 0.0003,
+    "steps": 56800,
+    "path": "runs/formal/ratio_1.00/Full/lr_0.0003/5110/step_056800"
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-10-30T00:02:27+08:00",
+  "contrasts": [
+    {
+      "treatment": "RawMap",
+      "control": "Coord",
+      "mean_improvement": -0.01035592789970714,
+      "sd": 0.011111179564969162,
+      "ci_low": -0.018304386934987954,
+      "ci_high": -0.0024074688644263233,
+      "p": 0.016291451834659264,
+      "mean_relative_improvement_percent": -0.5875001251519612,
+      "relative_ci_low": -1.0383314021802623,
+      "relative_ci_high": -0.13666884812365993,
+      "favorable_pairs": 1,
+      "bootstrap_ci_low": -0.01746881570095103,
+      "bootstrap_ci_high": -0.004573628992507475,
+      "p_holm": 0.016291451834659264
+    },
+    {
+      "treatment": "GeoPool",
+      "control": "RawMap",
+      "mean_improvement": -0.06506093713978123,
+      "sd": 0.02144436492664949,
+      "ci_low": -0.08040131168421505,
+      "ci_high": -0.049720562595347406,
+      "p": 5.0461571931692195e-06,
+      "mean_relative_improvement_percent": -3.6638522099956865,
+      "relative_ci_low": -4.528191963094573,
+      "relative_ci_high": -2.7995124568968004,
+      "favorable_pairs": 0,
+      "bootstrap_ci_low": -0.07853785972885106,
+      "bootstrap_ci_high": -0.05330228319797486,
+      "p_holm": 1.5138471579507659e-05
+    },
+    {
+      "treatment": "Full",
+      "control": "GeoDirect",
+      "mean_improvement": 0.10430698089810278,
+      "sd": 0.039289152212856254,
+      "ci_low": 0.07620121453290343,
+      "ci_high": 0.13241274726330213,
+      "p": 1.5025081950135621e-05,
+      "mean_relative_improvement_percent": 8.920328608286194,
+      "relative_ci_low": 6.785226434274134,
+      "relative_ci_high": 11.055430782298256,
+      "favorable_pairs": 10,
+      "bootstrap_ci_low": 0.08328265177802889,
+      "bootstrap_ci_high": 0.12931286443591844,
+      "p_holm": 3.0050163900271243e-05
+    },
+    {
+      "treatment": "Full",
+      "control": "RawMap",
+      "mean_improvement": 0.7234203099717906,
+      "sd": 0.01791914797000402,
+      "ci_low": 0.710601723722338,
+      "ci_high": 0.7362388962212433,
+      "p": 5.639361739542846e-16,
+      "mean_relative_improvement_percent": 40.71683055006696,
+      "relative_ci_low": 40.068905443662764,
+      "relative_ci_high": 41.364755656471154,
+      "favorable_pairs": 10,
+      "bootstrap_ci_low": 0.7127551416205398,
+      "bootstrap_ci_high": 0.7336610081717005,
+      "p_holm": 2.2557446958171382e-15
+    }
+  ],
+  "all_empty_gospa": 1.7419597665058169,
+  "reference_empty_fraction": 0.5546875,
+  "primary_comparisons": 4,
+  "interpretation": "Ten paired observation-noise/optimization repetitions in one fixed city; confirmation queries are not independent experimental replicates."
+}

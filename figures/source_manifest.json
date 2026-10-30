@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-30T09:41:12+08:00",
+  "font": "Times New Roman",
+  "font_file": "times.ttf",
+  "font_sha256": "931c5de5c70401d9324d5014c123802b4fb753000360ceb2f56c589403cd58c5",
+  "display_names": {
+    "Coord": "Coord",
+    "RawMap": "RawMap",
+    "GeoPool": "GeoPool",
+    "GeoDirect": "GeoDirect",
+    "Full": "Proposed"
+  },
+  "style": "MATLAB ColorOrder, boxed axes, inward ticks, distinct markers/linestyles",
+  "error_bars": "Sample SD (ddof=1) across 10 paired flows",
+  "x_axis": "Actual training-record counts averaged across flows for each frozen nested subset",
+  "five_real_curves": true,
+  "no_endpoint_subplot": true,
+  "single_column_width_inches": 3.5,
+  "sources": {
+    "extensions/full_learning_curves_20261030/results/summary_20_cells.csv": "abf34bfd2ad20e93fefb16557f2d0f7e91675cb9867e6861c758fa044bdf2033",
+    "extensions/full_learning_curves_20261030/results/per_flow_200.csv": "e821ca3f360f274bab0cc86d70358d3ee12cccc46951456efe77179430f01a24"
+  },
+  "plot_script_sha256": "b0a17bf4bff1e965a78b22bd2dc43298e5a84894fa85b930240ef0273cdb6c50",
+  "outputs": {
+    "five_method_learning_curves.pdf": "7c95a7e5a8a04e8c69d37a1c032fd0b5c123cb1462a8e524adcc266a0d3c88ab",
+    "five_method_learning_curves.png": "6a8abaab66b676243cb56ff74582b767c9fc60936715a5500ace3e199d0d36a9",
+    "plotted_data.csv": "8fd422c9a5afefaa57f84c26e6aca63293fd54156d04fd222e8f6a42ca74d0ad"
+  }
+}

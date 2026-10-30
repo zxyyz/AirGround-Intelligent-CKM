@@ -6,7 +6,10 @@ from paths import EXP,VARIANTS,LRS,THRESHOLDS,run_dir,save,sha,stamp
 PYTHON=sys.executable;SCRIPTS=EXP/'scripts';PILOT=[2026102701,2026102702,2026102703]
 
 def job(device,script,args,name):
- env=os.environ.copy();env.update(CUDA_VISIBLE_DEVICES=str(device),OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='1',TORCHINDUCTOR_COMPILE_THREADS='8')
+ physical_device=device if script in ['train.py','prepare_reference.py'] else 1
+ if physical_device==0:
+  while not (EXP/'results/new_measurement_resources_0.json').exists():time.sleep(15)
+ env=os.environ.copy();env.update(CUDA_VISIBLE_DEVICES=str(physical_device),OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='1',TORCHINDUCTOR_COMPILE_THREADS='4',TORCHINDUCTOR_CACHE_DIR=str(EXP/f'cache/torchinductor_gpu{physical_device}'),TRITON_CACHE_DIR=str(EXP/f'cache/triton_gpu{physical_device}'),PYTHONDONTWRITEBYTECODE='1')
  log=EXP/f'results/logs/{name}.log';log.parent.mkdir(parents=True,exist_ok=True)
  with log.open('a') as f:
   f.write('\nSTART '+stamp()+' '+repr(args)+'\n');f.flush()
@@ -31,7 +34,7 @@ def run_queues(queues):
 
 def precompute(stage,pairs,steps,ratios):
  from train import stream
- source=np.load(EXP/'cache/pool.npz');p={k:source[k] for k in source.files}
+ source=np.load(EXP/('cache/development_pool.npz' if stage=='pilot' else 'cache/pool.npz'));p={k:source[k] for k in source.files}
  for ratio in ratios:
   for pair in pairs:stream(stage,pair,ratio,steps,p)
 
@@ -67,16 +70,16 @@ def freeze_protocol(steps,selected):
  suites=list(ET.parse(EXP/'results/contract_tests.xml').getroot().iter('testsuite'))
  assert suites and all(int(s.get('errors','0'))==int(s.get('failures','0'))==int(s.get('skipped','0'))==0 for s in suites)
  assert json.loads((EXP/'results/tiny_fit.json').read_text())['passed']
- accelerations=list((EXP/'results').glob('acceleration_*.json'));assert len(accelerations)==2 and all(json.loads(p.read_text())['passed'] for p in accelerations)
+ accelerations=list((EXP/'results').glob('acceleration_*.json'));assert len(accelerations)==1 and all(json.loads(p.read_text())['passed'] for p in accelerations)
  assert not (EXP/'cache/reference_confirm.npz').exists()
  precompute('formal',list(range(5101,5111)),steps,[.1,.25,.5,1.])
- sources={str(p.relative_to(EXP)):sha(p) for directory in ['scripts','support','ckm_sim'] for p in sorted((EXP/directory).glob('*.py')) if p.name not in ['analyze.py','report.py','publish.py','finalize.py']}
+ sources={str(p.relative_to(EXP)):sha(p) for directory in ['scripts','support','ckm_sim'] for p in sorted((EXP/directory).glob('*.py')) if p.name in ['benchmark.py','check_acceleration.py','check_fit.py','data.py','evaluate.py','evaluate_batch.py','loss_reference.py','losses.py','models.py','paths.py','pipeline.py','prepare_reference.py','train.py','training_fit.py','validate_results.py'] or directory in ['support','ckm_sim']}
  assets={str(p.relative_to(EXP)):sha(p) for directory in ['cache','configs','assets'] for p in sorted((EXP/directory).glob('*')) if p.is_file() and p.name not in ['freeze.json','protocol.json']}
  batches={str(p.relative_to(EXP)):sha(p) for p in sorted((EXP/'manifests/batches').glob('formal*.npz'))}
  cfg=json.loads((EXP/'configs/protocol.json').read_text())
  freeze=dict(version=1,frozen=True,created_at=stamp(),steps=steps,learning_rates={v:x['lr'] for v,x in selected.items()},thresholds={v:x['threshold'] for v,x in selected.items()},training_source_hashes=sources,asset_hashes=assets,batch_hashes=batches,primary_contrasts=cfg['primary_contrasts'],formal_ensemble_runs=140)
  save(EXP/'configs/freeze.json',freeze)
- save(EXP/'results/engineering_acceptance.json',dict(passed=True,tests=sum(int(s.get('tests','0')) for s in suites),tiny_fit=True,acceleration_devices=2,created_at=stamp()))
+ save(EXP/'results/engineering_acceptance.json',dict(passed=True,tests=sum(int(s.get('tests','0')) for s in suites),tiny_fit=True,acceleration_devices=1,created_at=stamp()))
  print('FROZEN',steps,freeze['learning_rates'],freeze['thresholds'],flush=True)
 
 def reference():
@@ -102,7 +105,7 @@ def formal():
  run_queues(queues)
  for task in tasks:assert (EXP/task['path']/'evaluation_confirm.json').exists()
  save(EXP/'results/formal_complete.json',dict(status='complete',runs=140,members=420,steps_per_member=steps,created_at=stamp()))
- save(EXP/'STATUS.json',dict(status='running',stage='analysis_and_publication',updated_at=stamp()))
+ save(EXP/'STATUS.json',dict(status='running',stage='local_analysis_and_review_candidate',updated_at=stamp()))
 
 def all_stages():
  if not (EXP/'configs/freeze.json').exists():

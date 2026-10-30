@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-30T00:54:37+08:00",
+  "baseline": "../..",
+  "baseline_freeze_sha256": "5c75301d7d32b40a7322e93e79ed5686341464a2876ae8dbffcdbd3131c343d5",
+  "scope": "GeoPool/GeoDirect x 10/25/50% x 5101-5110 x 3 members",
+  "formal_stage_namespace": "formal (unchanged)",
+  "initializer": "Original SetModel.initialize(formal,pair,member); each ratio initialized from scratch; no full-data checkpoint loading",
+  "output_adaptation": "Only train.run_dir redirected; original science modules imported unchanged; pre-existing batch files mandatory",
+  "optimizer": "Original AdamW lr .003/.0003; weight decay .0001; batch64; gradient clipping5; 56800 updates/member; float32 TF32 disabled",
+  "thresholds": {
+    "GeoPool": 0.9,
+    "GeoDirect": 0.5
+  },
+  "inference": "Original threshold, NMS, max3 paths, three-member medoid and float64 GOSPA",
+  "validation": "Every query batch replay; 200 cardinality-stratified scalar matches per new group (50 per reference K, 12000 total) and every-query component identity; original source/results integrity checked again",
+  "analysis": "New sparse contrasts are descriptive extensions after previous confirmation was viewed; no retuning; original four primary full-data tests unchanged"
+}

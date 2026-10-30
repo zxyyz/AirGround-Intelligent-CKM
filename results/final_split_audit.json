@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "counts": [
+    {
+      "dataset": "training",
+      "flow": 5101,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5102,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5103,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5104,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5105,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5106,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5107,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5108,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5109,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "training",
+      "flow": 5110,
+      "records": 9556,
+      "unique_positions": 7181,
+      "empty_labels": 5000,
+      "failed": 0,
+      "blocks": 104,
+      "repeat_observations": 2375
+    },
+    {
+      "dataset": "dev",
+      "flow": "shared",
+      "records": 512,
+      "unique_positions": 512,
+      "empty_labels": 282,
+      "failed": 0,
+      "blocks": 158,
+      "repeat_observations": 0
+    },
+    {
+      "dataset": "confirm",
+      "flow": "shared",
+      "records": 4096,
+      "unique_positions": 4096,
+      "empty_labels": 2272,
+      "failed": 0,
+      "blocks": 213,
+      "repeat_observations": 0
+    }
+  ],
+  "same_position_across_flow_grouping_verified": true,
+  "intersections": 0,
+  "joint_near_exclusions": 0,
+  "nested_subsets_verified": true,
+  "created_at": "2026-10-30T00:02:26+08:00"
+}

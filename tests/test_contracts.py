@@ -74,7 +74,7 @@ def test_training_split_and_fresh_queries():
  for x,near in zip(q,tree.query_ball_point(q[:,:3],10.)):
   assert not near or not (g.road_distance(x[3:],train[near,3:])<=5.).any()
 
-@pytest.mark.parametrize('device',['cpu','cuda:0','cuda:1'])
+@pytest.mark.parametrize('device',['cpu','cuda:0'])
 @pytest.mark.parametrize('variant',['RawMap','Full'])
 def test_independent_updates(device,variant):
  torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False

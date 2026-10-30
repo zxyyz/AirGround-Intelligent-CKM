@@ -1,59 +1,26 @@
-# Python / local environments
+# Local environments and credentials
 __pycache__/
 *.py[cod]
 .venv/
 venv/
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
 .env
 .env.*
-!.env.example
 *.key
 *.pem
-
-# Generated research material and external data
-/paper/
-/figures/
-/results/
-/docs/
-/manifests/
+# External simulation data and trained artifacts (not published)
 /assets/
 /cache/
 /runs/
-/downloads/
-/.downloads/
-/artifacts/
-/drafts/
-/archives/
+/audit/
+/logs/
 /output/
-STATUS.json
-STOP
-
-# Manuscripts, figures, presentation and exports
-*.tex
-*.bib
-*.aux
-*.bbl
-*.blg
-*.out
-*.synctex.gz
-*.pdf
-*.png
-*.jpg
-*.jpeg
-*.svg
-*.eps
-*.ps
-*.pptx
-*.docx
-*.xlsx
-*.ipynb
-
-# Results, datasets and checkpoints
-*.csv
-*.tsv
-*.parquet
+/downloads/
+/archives/
+/release_candidate/
+/extensions/*/cache/
+/extensions/*/runs/
+/extensions/*/logs/
 *.npz
 *.npy
 *.pt
@@ -64,5 +31,17 @@ STOP
 *.tar
 *.gz
 *.zip
-*.7z
 *.log
+STATUS.json
+STOP
+# Private manuscript sources and documents
+/paper/
+/drafts/
+*.tex
+*.bib
+*.docx
+*.pptx
+
+# Runtime outputs from optional experiment replay
+/results/logs/
+*.jsonl

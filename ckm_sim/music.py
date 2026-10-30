@@ -6,7 +6,7 @@ import torch
 from .config import ROOT, write_json, scientific_hash
 from .geometry import directions
 from .sounding import (noise_variance, estimate_ls_csi, build_hankel_snapshots,
-                       array_response, joint_atom)
+                       array_response, joint_atom, frequency_offsets)
 
 def signal_subspace(y,threshold,max_rank):
     # The Gram eigendecomposition is algebraically the thin SVD; no full D x D covariance.
@@ -45,7 +45,7 @@ class RFEstimator:
         self.txangles=np.array(list(itertools.product(az,zd)))
         self.ar=self.tensor(array_response(self.rxangles,self.s['nr'],cfg,True))
         self.at=self.tensor(array_response(self.txangles,self.s['nt'],cfg,False))
-        self.freq=self.tensor(np.exp(-2j*np.pi*self.delay[:,None]*np.arange(self.q)*self.s['delta_f_hz'])/np.sqrt(self.q))
+        self.freq=self.tensor(np.exp(-2j*np.pi*self.delay[:,None]*frequency_offsets(self.cfg,self.q))/np.sqrt(self.q))
         self.step=np.array([(self.delay[-1]-self.delay[0])/(nd-1),2*np.pi/na,np.pi/(2*(nz-1)),2*np.pi/na,np.pi/(2*(nz-1))])
 
     def tensor(self,value):return torch.as_tensor(value,dtype=self.dtype,device=self.device)
@@ -108,7 +108,7 @@ class RFEstimator:
             dd=xi[:,None,3:5]+local[None]*step[None,None,3:5]
             aa[...,0]=(aa[...,0]+np.pi)%(2*np.pi)-np.pi;dd[...,0]=(dd[...,0]+np.pi)%(2*np.pi)-np.pi
             aa[...,1]=np.clip(aa[...,1],0,np.pi/2);dd[...,1]=np.clip(dd[...,1],np.pi/2,np.pi)
-            freq=self.tensor(np.exp(-2j*np.pi*delay[...,None]*np.arange(self.q)*self.s['delta_f_hz'])/np.sqrt(self.q))
+            freq=self.tensor(np.exp(-2j*np.pi*delay[...,None]*frequency_offsets(self.cfg,self.q))/np.sqrt(self.q))
             ar=self.tensor(array_response(aa,self.s['nr'],self.cfg,True))
             at=self.tensor(array_response(dd,self.s['nt'],self.cfg,False))
             tmp=torch.einsum('cfq,qtrk->cftrk',freq,u.conj())
@@ -207,7 +207,7 @@ class RFEstimator:
                 dd=xi[...,None,3:5]+local[None,None]*step[None,None,None,3:5]
                 aa[...,0]=(aa[...,0]+np.pi)%(2*np.pi)-np.pi;dd[...,0]=(dd[...,0]+np.pi)%(2*np.pi)-np.pi
                 aa[...,1]=np.clip(aa[...,1],0,np.pi/2);dd[...,1]=np.clip(dd[...,1],np.pi/2,np.pi)
-                freq=self.tensor(np.exp(-2j*np.pi*delay[...,None]*np.arange(self.q)*self.s['delta_f_hz'])/np.sqrt(self.q))
+                freq=self.tensor(np.exp(-2j*np.pi*delay[...,None]*frequency_offsets(self.cfg,self.q))/np.sqrt(self.q))
                 ar=self.tensor(array_response(aa,self.s['nr'],self.cfg,True));at=self.tensor(array_response(dd,self.s['nt'],self.cfg,False))
                 tmp=torch.einsum('bcfq,bqtrk->bcftrk',freq,u.conj())
                 tmp=torch.einsum('bcar,bcftrk->bcfatk',ar,tmp)
@@ -218,7 +218,7 @@ class RFEstimator:
                 xi=np.concatenate([delay[batch,candidate,fi][...,None],aa[batch,candidate,ai],dd[batch,candidate,di]],-1)
                 step*=self.e['refine_step_ratio']
             # Evaluate final tuples with the same factorized projector, not the true paths.
-            freq=self.tensor(np.exp(-2j*np.pi*xi[...,0,None]*np.arange(self.q)*self.s['delta_f_hz'])/np.sqrt(self.q))
+            freq=self.tensor(np.exp(-2j*np.pi*xi[...,0,None]*frequency_offsets(self.cfg,self.q))/np.sqrt(self.q))
             ar=self.tensor(array_response(xi[...,1:3],self.s['nr'],self.cfg,True));at=self.tensor(array_response(xi[...,3:5],self.s['nt'],self.cfg,False))
             tmp=torch.einsum('bcq,bqtrk->bctrk',freq,u.conj());tmp=torch.einsum('bcr,bctrk->bctk',ar,tmp)
             norm=torch.einsum('bct,bctk->bck',at.conj(),tmp).abs().square().sum(-1).cpu().numpy()

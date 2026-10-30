@@ -57,7 +57,7 @@ def train(stage,pairs,variant,steps,ratio=1.,lr=.001,compile_model=True):
         freeze=json.loads((EXP/'configs/freeze.json').read_text());assert freeze['frozen'] and steps==freeze['steps']
         assert lr==freeze['learning_rates'][variant]
         for path,h in freeze['training_source_hashes'].items():assert sha(EXP/path)==h,path
-    device='cuda:0';source=np.load(EXP/'cache/pool.npz');p={k:source[k] for k in source.files}
+    device='cuda:0';source=np.load(EXP/('cache/development_pool.npz' if stage=='pilot' else 'cache/pool.npz'));p={k:source[k] for k in source.files}
     dest=run_dir(stage,variant,lr,pairs[0],ratio).parent;dest.mkdir(parents=True,exist_ok=True)
     marker=dest/f'group_{pairs[0]}_{steps}_complete.json'
     if marker.exists():return

@@ -1,0 +1,24 @@
+{
+  "frozen_before_confirmation": true,
+  "examples": {
+    "flow": 5101,
+    "empty": "lowest query ID with empty reference; no prediction filtering",
+    "single": "nearest within-reference-K1 median squared GOSPA, ties smallest query ID",
+    "multiple": "nearest within-reference-K>=2 median squared GOSPA, ties smallest query ID",
+    "median": "nearest pooled median squared GOSPA, ties smallest ID",
+    "p90": "nearest pooled P90 squared GOSPA, ties smallest ID"
+  },
+  "components": [
+    "gain",
+    "delay",
+    "AoA spherical direction",
+    "AoD spherical direction",
+    "miss",
+    "false"
+  ],
+  "identity_tolerance": 1e-08,
+  "physical_errors": "conditional on matched paths vs noiseless MUSIC-LS; NA with support 0; per-flow aggregation then descriptive across-flow summaries",
+  "cdf": "pooled matched-path errors for descriptive display only; no independence claim",
+  "primary_tests": "four paired tests on absolute GOSPA differences; Student-t intervals; Holm correction",
+  "scope": "No new architecture, no optional60 groups, no applications claim, no online write"
+}

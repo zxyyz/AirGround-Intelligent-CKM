@@ -9,7 +9,7 @@ import numpy as np
 
 def main():
  torch.set_num_threads(2);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
- p=np.load(EXP/'cache/pool.npz');ix=np.flatnonzero(p['train']&(p['pair']==5101))[:64]
+ p=np.load(EXP/'cache/development_pool.npz');ix=np.flatnonzero(p['train']&(p['pair']==5101))[:64]
  z=torch.tensor(p['labels'][ix],dtype=torch.float32,device='cuda:0')[None].expand(9,-1,-1,-1)
  k=torch.tensor(p['n_paths'][ix].astype(np.int64),device='cuda:0')[None].expand(9,-1)
  results=[]

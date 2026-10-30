@@ -44,7 +44,7 @@ def freeze_queries():
     g=GeometryMap(config());p=np.load(EXP/'cache/pool.npz');train=np.unique(p['x'][p['train']],axis=0)
     tree=cKDTree(train[:,:3]);samples=[];drawn=fold_reject=buffer_reject=0
     # One seed and one draw stream, before any confirmation reference exists.
-    q,_=g.sample_safe_queries(131072,2026102702)
+    q,_=g.sample_safe_queries(131072,2026102902)
     for x in q:
         drawn+=1
         if folds(x[None])[0]!=4:fold_reject+=1;continue
@@ -54,7 +54,7 @@ def freeze_queries():
         if len(samples)==4096:break
     assert len(samples)==4096
     np.savez_compressed(dest,queries=np.array(samples),weights=np.full(4096,1/4096),folds=np.full(4096,4))
-    save(EXP/'configs/query_freeze_confirm.json',dict(n=4096,seed=2026102702,fold=4,sha256=sha(dest),drawn=drawn,fold_rejected=fold_reject,buffer_rejected=buffer_reject,reference_generated=False,created_at=stamp(),selection='safe air-volume x road-length conditioned on fold4 and outside joint training buffer (UAV10m AND road5m)'))
+    save(EXP/'configs/query_freeze_confirm.json',dict(n=4096,seed=2026102902,fold=4,sha256=sha(dest),drawn=drawn,fold_rejected=fold_reject,buffer_rejected=buffer_reject,reference_generated=False,created_at=stamp(),selection='safe air-volume x road-length conditioned on fold4 and outside joint training buffer (UAV10m AND road5m)'))
 _geo=None
 def init_geometry():
     global _geo

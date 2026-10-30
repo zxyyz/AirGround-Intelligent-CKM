@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "groups": 200,
+  "members": 600,
+  "summary_cells": 20,
+  "development_groups": 45,
+  "development_members": 135,
+  "original_groups": 140,
+  "additional_groups": 60,
+  "original_per_flow_fields_identical": 3220,
+  "original_summary_cells_identical": 14,
+  "queries_exported": 819200,
+  "created_at": "2026-10-30T01:31:05+08:00"
+}

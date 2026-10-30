@@ -1,0 +1,9 @@
+{
+  "n": 512,
+  "seed": 2026102681,
+  "fold": 3,
+  "sha256": "5e798cb300723f9bd18bce42eb9677ea72a633e7d9af84c288dd9bcbc283a160",
+  "created_at": "2026-10-26T23:29:56+0800",
+  "reference_generated": false,
+  "selection": "geometry only; safe air volume times road arclength, rejection to specified fold"
+}

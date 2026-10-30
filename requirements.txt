@@ -1,4 +1,4 @@
-# Exact package versions of the executed experiment (Python 3.12).
+# Executed Python 3.12.14 environment
 numpy==2.5.4
 scipy==1.18.1
 matplotlib==3.11.2

@@ -1,7 +1,7 @@
 {
-  "schema_version": "geometry-attribution-v1",
-  "status": "frozen",
-  "frozen": true,
+  "schema_version": "reviewer-revision-20261029-v1",
+  "status": "development_not_frozen",
+  "frozen": false,
   "variants": [
     "Coord",
     "RawMap",
@@ -18,7 +18,7 @@
     0.1,
     0.25,
     0.5,
-    1
+    1.0
   ],
   "flows": [
     5101,
@@ -76,9 +76,9 @@
   "weight_decay": 0.0001,
   "gradient_clip": 5,
   "precision": "float32; TF32 disabled",
-  "query_seed": 2026102702,
+  "query_seed": 2026102902,
   "query_count": 4096,
-  "training_pool": "Frozen9556frames per noise flow; previous dataset copied unchanged",
+  "training_pool": "Original training record IDs and positions; new 480kHz noisy MUSIC-LS labels; all models share valid record set",
   "primary_contrasts": [
     [
       "RawMap",
@@ -99,7 +99,6 @@
   ],
   "formal_ensemble_runs": 140,
   "final_model_members": 420,
-  "scope": "Existing learner extraction; no new loss, no acquisition or planner experiments",
-  "effective_freeze": "freeze.json",
-  "frozen_at": "2026-10-27T12:24:38+08:00"
+  "scope": "20261029 review plan E0-E4; no active CKM or optional 60 groups",
+  "effective_freeze": "freeze.json"
 }

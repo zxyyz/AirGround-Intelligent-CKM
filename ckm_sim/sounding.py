@@ -2,6 +2,17 @@
 import numpy as np
 from .geometry import directions
 
+def frequency_offsets(cfg, count=None):
+    """Physical pilot offsets, with an explicit OFDM base grid and comb."""
+    s=cfg['sounding'];n=s['n_frequencies'] if count is None else count
+    spacing=s['delta_f_hz']
+    if 'subcarrier_spacing_hz' in s:
+        expected=s['subcarrier_spacing_hz']*s['pilot_comb']
+        if not np.isclose(spacing,expected,rtol=0,atol=1e-9) or not np.isclose(s['pilot_spacing_hz'],expected,rtol=0,atol=1e-9):
+            raise ValueError('Inconsistent physical pilot frequency grid')
+        spacing=expected
+    return np.arange(n,dtype=np.float64)*spacing
+
 def noise_variance(cfg):
     s=cfg['sounding']
     return s['pilot_energy_ep']*10**(s['noise_reference_gain_db']/10)/(s['nt']*s['nr']*10**(s['noise_reference_frobenius_snr_db']/10))
@@ -15,14 +26,14 @@ def array_response(a,n,cfg,receive=True):
 def joint_atom(xi,cfg,q=None):
     s=cfg['sounding'];q=q or cfg['estimator']['frequency_window_q']
     ar=array_response(xi[1:3],s['nr'],cfg,True);at=array_response(xi[3:5],s['nt'],cfg,False)
-    d=np.exp(-2j*np.pi*np.arange(q)*s['delta_f_hz']*xi[0])
+    d=np.exp(-2j*np.pi*frequency_offsets(cfg,q)*xi[0])
     return np.kron(d,np.kron(at.conj(),ar))
 
 def channel_from_paths(paths,coefficients,cfg):
     s=cfg['sounding'];h=np.zeros((s['n_frequencies'],s['nr'],s['nt']),complex)
     for z,alpha in zip(paths,coefficients):
         ar=array_response(z[2:4],s['nr'],cfg,True);at=array_response(z[4:6],s['nt'],cfg,False)
-        d=np.exp(-2j*np.pi*np.arange(s['n_frequencies'])*s['delta_f_hz']*z[1])
+        d=np.exp(-2j*np.pi*frequency_offsets(cfg)*z[1])
         h+=alpha*d[:,None,None]*ar[None,:,None]*at.conj()[None,None,:]
     return h
 

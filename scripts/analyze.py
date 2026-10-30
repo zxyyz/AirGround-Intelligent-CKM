@@ -49,7 +49,7 @@ def analyze():
   a=sorted([r for r in rows if r['variant']==treatment and r['ratio']==1],key=lambda r:r['pair']);b=sorted([r for r in rows if r['variant']==control and r['ratio']==1],key=lambda r:r['pair'])
   delta=np.array([y['gospa']-x['gospa'] for x,y in zip(a,b)]);rel=np.array([100*(y['gospa']-x['gospa'])/y['gospa'] for x,y in zip(a,b)])
   mean,sd,lo,hi=interval(delta);rmean,rsd,rlo,rhi=interval(rel)
-  rng=np.random.Generator(np.random.PCG64DXSM(2026102799));boot=delta[rng.integers(0,10,(10000,10))].mean(1)
+  rng=np.random.Generator(np.random.PCG64DXSM(2026102999));boot=delta[rng.integers(0,10,(10000,10))].mean(1)
   contrasts.append(dict(treatment=treatment,control=control,mean_improvement=mean,sd=sd,ci_low=lo,ci_high=hi,p=(float(stats.ttest_1samp(delta,0).pvalue) if np.std(delta)>1e-15 else (1. if np.max(np.abs(delta))<1e-15 else 0.)),mean_relative_improvement_percent=rmean,relative_ci_low=rlo,relative_ci_high=rhi,favorable_pairs=int((delta>0).sum()),bootstrap_ci_low=float(np.quantile(boot,.025)),bootstrap_ci_high=float(np.quantile(boot,.975))))
   paired.extend(dict(treatment=treatment,control=control,pair=r['pair'],absolute_improvement=float(d),relative_improvement_percent=float(rel[i])) for i,(r,d) in enumerate(zip(a,delta)))
  previous=0.

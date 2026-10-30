@@ -11,7 +11,7 @@ from ckm_sim.geometry import angles
 
 def main():
  torch.set_num_threads(2);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
- p=np.load(EXP/'cache/pool.npz');pool=np.flatnonzero(p['train']&(p['pair']==5101)&(p['n_paths']>0));chosen=[];seen=set()
+ p=np.load(EXP/'cache/development_pool.npz');pool=np.flatnonzero(p['train']&(p['pair']==5101)&(p['n_paths']>0));chosen=[];seen=set()
  for want in [1,2,3]:
   for i in pool:
    if p['n_paths'][i]==want and int(p['unique_index'][i]) not in seen:
